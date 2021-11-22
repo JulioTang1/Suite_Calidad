@@ -1,0 +1,19 @@
+
+#contenedorPag_construccion {
+	background-color: #fff;
+	/*evita que se pueda seleccionar el texto en la barra*/
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none; 
+}
+
+@media only screen and (max-width: 670px){
+
+	#contenedorPag_construccion {
+		background-size: contain;
+	}
+}	
+
+
+

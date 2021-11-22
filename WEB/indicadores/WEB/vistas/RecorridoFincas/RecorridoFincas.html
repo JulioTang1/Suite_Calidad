@@ -1,0 +1,60 @@
+<link rel="stylesheet" type="text/css" href="vistas/RecorridoFincas/estilos/estilos.css">
+
+<div id="contenedor_RecorridoFincas" class="container-fuild">
+  
+	<div id="divSelectVista" class="d-flex  flex-wrap">
+		<div id="calendarPlanning">
+			<i class="fa fa-calendar"></i>&nbsp;
+			 <span></span> <i class="fa fa-caret-down"></i>
+		</div>
+		<select  id="selectDepartamento" class='selectpicker' multiple>
+			<option disabled></option>
+		</select>
+		<select  id="selectMunicipio" class='selectpicker' multiple>
+			<option disabled></option>
+		</select>
+		<select  id="selectFinca" class='selectpicker' multiple>
+			<option disabled></option>
+		</select>
+		<button id="cargar" class="btn btn-md btn-success" disabled>
+			<i class="fas fa-redo"></i>
+			<span>Cargar</span>
+		</button>
+		<div class="TituloCategoria">
+			<span class="titulo_opcion"></span>
+		</div>
+		<select  id="selectEdad" class='selectpicker' multiple>
+			<option disabled></option>
+		</select>
+		<select  id="selectInfeccion" class='selectpicker' multiple>
+			<option disabled></option>
+		</select>
+		<button id="volver" class="btn btn-md btn-primary">
+			<i class="far fa-arrow-alt-circle-left"></i>
+			<span>Regresar</span>		      	
+		</button>
+	</div>
+	<div id="tableRecorridoFincas"></div>
+
+	<div id="scroller-left" class="scroller scroller-left"><i class="fas fa-angle-left"></i></div>
+	<div id="scroller-right" class="scroller scroller-right"><i class="fas fa-angle-right"></i></div>
+	<div id="navWrapper" class="wrapper">
+		<nav id='nav-wrapper-balance' class="nav nav-tabs list">
+			<a class="nav-tabs nav-link active" data-toggle="tab" href="#tablas">Tablas</a>
+			<a class="nav-tabs nav-link" data-toggle="tab" href="#map">Mapa</a>
+		</nav>
+	</div>
+	<div class="tab-content">
+		<div id="tablas" class="tab-pane active"></div>
+		<div id="map" class="tab-pane fade"></div>
+	</div>
+  
+</div>
+
+<!---Google API para MAPS-->>
+<script src="https://unpkg.com/@googlemaps/js-api-loader@^1.2.0/dist/index.min.js"></script>
+<script src="vistas/RecorridoFincas/scripts/variables.js"></script>
+<script src="vistas/RecorridoFincas/scripts/comunicaciones.js"></script>
+<script src="vistas/RecorridoFincas/scripts/funciones.js"></script>
+<script src="vistas/RecorridoFincas/scripts/gestionDOM.js"></script>
+<script src="vistas/RecorridoFincas/scripts/ready.js"></script>

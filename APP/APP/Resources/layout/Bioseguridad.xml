@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/amarillo"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+    
+        <ImageView
+            android:id="@+id/volverBioseguridad"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/leftarrow"/>
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="220dp"
+            android:layout_height="2000dp"
+            android:src="@drawable/banasanTituloSinFondo"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="580dp">
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- GRUPO 1 -->
+                <RelativeLayout
+                    android:background="@drawable/roundededgesamarillo"               
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- TITULO -->
+                    <RelativeLayout
+                        android:id="@+id/aspecto1"
+                        android:padding="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <TextView
+                                android:textSize="20dp"
+                                android:gravity="center_vertical"
+                                android:text="Componente de infraestructura"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:textColor="@color/black"/>
+
+                        <ImageView
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"                      
+                            android:src="@drawable/drop_down"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"/>
+
+                    </RelativeLayout>
+
+                    <!-- DESPLEGABLE -->
+                    <com.github.aakira.expandablelayout.ExpandableRelativeLayout 
+                        android:id="@+id/aspecto1Expandable"
+                        android:layout_below="@+id/aspecto1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        app:ael_duration="500"
+                        app:ael_expanded="false"            
+                        app:ael_orientation="vertical"
+                        app:ael_interpolator="accelerateDecelerate">
+
+                        <ListView
+                            android:listSelector="@android:color/transparent"
+                            android:divider = "@color/amarillo"                        
+                            android:layout_width="match_parent"
+                            android:layout_height="2555dp"
+                            android:id="@+id/listChequeos1" />
+
+                    </com.github.aakira.expandablelayout.ExpandableRelativeLayout >
+
+                </RelativeLayout>
+
+                <!-- GRUPO 2 -->
+                <RelativeLayout
+                    android:background="@drawable/roundededgesamarillo"               
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- TITULO -->
+                    <RelativeLayout
+                        android:id="@+id/aspecto2"
+                        android:padding="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <TextView
+                                android:textSize="20dp"
+                                android:gravity="center_vertical"
+                                android:text="Componente operativo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:textColor="@color/black"/>
+
+                        <ImageView
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"                      
+                            android:src="@drawable/drop_down"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"/>
+
+                    </RelativeLayout>
+
+                    <!-- DESPLEGABLE -->
+                    <com.github.aakira.expandablelayout.ExpandableRelativeLayout 
+                        android:id="@+id/aspecto2Expandable"
+                        android:layout_below="@+id/aspecto2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        app:ael_duration="500"
+                        app:ael_expanded="false"            
+                        app:ael_orientation="vertical"
+                        app:ael_interpolator="accelerateDecelerate">
+
+                        <ListView
+                            android:listSelector="@android:color/transparent"
+                            android:divider = "@color/amarillo"                        
+                            android:layout_width="match_parent"
+                            android:layout_height="1245dp"
+                            android:id="@+id/listChequeos2" />
+
+                    </com.github.aakira.expandablelayout.ExpandableRelativeLayout >
+
+                </RelativeLayout>
+
+                <!-- GRUPO 3 -->
+                <RelativeLayout
+                    android:background="@drawable/roundededgesamarillo"               
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- TITULO -->
+                    <RelativeLayout
+                        android:id="@+id/aspecto3"
+                        android:padding="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <TextView
+                                android:textSize="20dp"
+                                android:gravity="center_vertical"
+                                android:text="Componente químico"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:textColor="@color/black"/>
+
+                        <ImageView
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"                      
+                            android:src="@drawable/drop_down"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"/>
+
+                    </RelativeLayout>
+
+                    <!-- DESPLEGABLE -->
+                    <com.github.aakira.expandablelayout.ExpandableRelativeLayout 
+                        android:id="@+id/aspecto3Expandable"
+                        android:layout_below="@+id/aspecto3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="10dp"
+                        app:ael_duration="500"
+                        app:ael_expanded="false"            
+                        app:ael_orientation="vertical"
+                        app:ael_interpolator="accelerateDecelerate">
+
+                        <ListView
+                            android:listSelector="@android:color/transparent"
+                            android:divider = "@color/amarillo"                        
+                            android:layout_width="match_parent"
+                            android:layout_height="743dp"
+                            android:id="@+id/listChequeos3" />
+
+                    </com.github.aakira.expandablelayout.ExpandableRelativeLayout >
+
+                </RelativeLayout>
+
+                <!-- GRUPO 4 -->
+                <RelativeLayout
+                    android:background="@drawable/roundededgesamarillo"               
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!-- TITULO -->
+                    <RelativeLayout
+                        android:id="@+id/aspecto4"
+                        android:padding="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <TextView
+                                android:textSize="20dp"
+                                android:gravity="center_vertical"
+                                android:text="Componente informativo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:textColor="@color/black"/>
+
+                        <ImageView
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"                      
+                            android:src="@drawable/drop_down"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"/>
+
+                    </RelativeLayout>
+
+                    <!-- DESPLEGABLE -->
+                    <com.github.aakira.expandablelayout.ExpandableRelativeLayout 
+                        android:id="@+id/aspecto4Expandable"
+                        android:layout_below="@+id/aspecto4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        app:ael_duration="500"
+                        app:ael_expanded="false"            
+                        app:ael_orientation="vertical"
+                        app:ael_interpolator="accelerateDecelerate">
+
+                        <ListView
+                            android:listSelector="@android:color/transparent"
+                            android:divider = "@color/amarillo"                        
+                            android:layout_width="match_parent"
+                            android:layout_height="920dp"
+                            android:id="@+id/listChequeos4" />
+
+                    </com.github.aakira.expandablelayout.ExpandableRelativeLayout >
+
+                </RelativeLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:theme="@style/TextLabel"
+                    android:id="@+id/observaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+        
+                    <EditText
+                        android:textColor="@color/black"
+                        android:theme="@style/TextLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:hint="Observaciones"
+                        android:inputType="textMultiLine"
+                        android:lines="5"/>
+        
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:theme="@style/TextLabel"
+                    android:id="@+id/recomendaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+        
+                    <EditText
+                        android:textColor="@color/black"
+                        android:theme="@style/TextLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:hint="Recomendaciones"
+                        android:inputType="textMultiLine"
+                        android:lines="5"/>
+        
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:theme="@style/TextLabel"
+                    android:id="@+id/responsable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+        
+                    <EditText
+                        android:textColor="@color/black"
+                        android:theme="@style/TextLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:hint="Responsable"
+                        android:inputType="textMultiLine"
+                        android:lines="5"/>
+        
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:textSize="20dp"
+                    android:id="@+id/guardarBioseguridad"
+                    android:layout_gravity="center_horizontal"         
+                    android:layout_height="55dp"
+                    android:text="Guardar Visita Bioseguridad"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@color/amarillo"
+                    android:textAllCaps="false"
+                    android:layout_width="match_parent"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</LinearLayout>

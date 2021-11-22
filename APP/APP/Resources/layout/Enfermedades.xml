@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/amarillo"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+    
+        <ImageView
+            android:id="@+id/volverEnfermedades"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/leftarrow"/>
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="220dp"
+            android:layout_height="2000dp"
+            android:src="@drawable/banasanTituloSinFondo"/>
+
+    </RelativeLayout>
+
+	<ScrollView
+		android:layout_width="wrap_content"
+		android:layout_height="200dp"
+        android:layout_gravity="center_horizontal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                   android:textSize="20dp"
+                   android:id="@+id/enfermedadesVasculares"
+                   android:layout_gravity="center_horizontal"      
+                   android:layout_height="55dp"
+                   android:text="Enfermedades Vasculares"
+                   android:background="@drawable/roundededges"
+                   android:textColor="@color/black"
+                   android:textAllCaps="false"
+                   android:layout_width="300dp"/>
+
+            <Button
+                   android:textSize="20dp"
+                   android:id="@+id/condicionesCulturales"
+                   android:layout_gravity="center_horizontal"
+                   android:layout_marginTop="10dp"            
+                   android:layout_height="55dp"
+                   android:text="Condiciones Culturales"
+                   android:background="@drawable/roundededges"
+                   android:textColor="@color/black"
+                   android:textAllCaps="false"
+                   android:layout_width="300dp"/>
+
+            <Button
+                   android:textSize="20dp"
+                   android:id="@+id/sigatoka1"
+                   android:layout_marginTop="10dp"      
+                   android:layout_gravity="center_horizontal"        
+                   android:layout_height="55dp"
+                   android:text="Sigatoka - Parcela Fija 1"
+                   android:background="@drawable/roundededges"
+                   android:textColor="@color/black"
+                   android:textAllCaps="false"
+                   android:layout_width="300dp"/>
+
+            <Button
+                   android:textSize="20dp"
+                   android:id="@+id/sigatoka2"
+                   android:layout_gravity="center_horizontal"  
+                   android:layout_marginTop="10dp" 
+                   android:layout_height="55dp"
+                   android:text="Sigatoka - Parcela Fija 2"
+                   android:background="@drawable/roundededges"
+                   android:textColor="@color/black"
+                   android:textAllCaps="false"
+                   android:layout_width="300dp"/>
+
+            <Button
+                   android:textSize="20dp"
+                   android:id="@+id/sigatoka3"
+                   android:layout_gravity="center_horizontal"  
+                   android:layout_marginTop="10dp" 
+                   android:layout_height="55dp"
+                   android:text="Sigatoka - Parcela Fija 3"
+                   android:background="@drawable/roundededges"
+                   android:textColor="@color/black"
+                   android:textAllCaps="false"
+                   android:layout_width="300dp"/>
+
+            <Button
+                   android:textSize="20dp"
+                   android:id="@+id/sigatoka4"
+                   android:layout_gravity="center_horizontal"  
+                   android:layout_marginTop="10dp" 
+                   android:layout_height="55dp"
+                   android:text="Sigatoka - Parcela Fija 4"
+                   android:background="@drawable/roundededges"
+                   android:textColor="@color/black"
+                   android:textAllCaps="false"
+                   android:layout_width="300dp"/>
+
+            <Button
+                   android:textSize="20dp"
+                   android:id="@+id/sigatoka5"
+                   android:layout_gravity="center_horizontal"  
+                   android:layout_marginTop="10dp" 
+                   android:layout_height="55dp"
+                   android:text="Sigatoka - Parcela Fija 5"
+                   android:background="@drawable/roundededges"
+                   android:textColor="@color/black"
+                   android:textAllCaps="false"
+                   android:layout_width="300dp"/>
+
+            <Button
+                   android:textSize="20dp"
+                   android:id="@+id/sigatoka6"
+                   android:layout_gravity="center_horizontal"  
+                   android:layout_marginTop="10dp" 
+                   android:layout_height="55dp"
+                   android:text="Sigatoka - Parcela Fija 6"
+                   android:background="@drawable/roundededges"
+                   android:textColor="@color/black"
+                   android:textAllCaps="false"
+                   android:layout_width="300dp"/>
+
+            <Button
+                   android:textSize="20dp"
+                   android:id="@+id/sigatoka7"
+                   android:layout_gravity="center_horizontal"  
+                   android:layout_marginTop="10dp" 
+                   android:layout_height="55dp"
+                   android:text="Sigatoka - Parcela Fija 7"
+                   android:background="@drawable/roundededges"
+                   android:textColor="@color/black"
+                   android:textAllCaps="false"
+                   android:layout_width="300dp"/>
+
+            <Button
+                   android:textSize="20dp"
+                   android:id="@+id/sigatoka8"
+                   android:layout_gravity="center_horizontal"  
+                   android:layout_marginTop="10dp" 
+                   android:layout_height="55dp"
+                   android:text="Sigatoka - Parcela Fija 8"
+                   android:background="@drawable/roundededges"
+                   android:textColor="@color/black"
+                   android:textAllCaps="false"
+                   android:layout_width="300dp"/>
+
+            <Button
+                   android:textSize="20dp"
+                   android:id="@+id/sigatoka9"
+                   android:layout_gravity="center_horizontal"  
+                   android:layout_marginTop="10dp" 
+                   android:layout_height="55dp"
+                   android:text="Sigatoka - Parcela Fija 9"
+                   android:background="@drawable/roundededges"
+                   android:textColor="@color/black"
+                   android:textAllCaps="false"
+                   android:layout_width="300dp"/>
+
+            <Button
+                   android:textSize="20dp"
+                   android:id="@+id/sigatoka10"
+                   android:layout_gravity="center_horizontal"  
+                   android:layout_marginTop="10dp" 
+                   android:layout_height="55dp"
+                   android:text="Sigatoka - Parcela Fija 10"
+                   android:background="@drawable/roundededges"
+                   android:textColor="@color/black"
+                   android:textAllCaps="false"
+                   android:layout_width="300dp"/>
+
+            <Button
+                   android:textSize="20dp"
+                   android:id="@+id/sigatoka11"
+                   android:layout_gravity="center_horizontal"  
+                   android:layout_marginTop="10dp" 
+                   android:layout_height="55dp"
+                   android:text="Sigatoka - Parcela Fija 11"
+                   android:background="@drawable/roundededges"
+                   android:textColor="@color/black"
+                   android:textAllCaps="false"
+                   android:layout_width="300dp"/>
+
+            <Button
+                   android:textSize="20dp"
+                   android:id="@+id/sigatoka12"
+                   android:layout_gravity="center_horizontal"  
+                   android:layout_marginTop="10dp" 
+                   android:layout_height="55dp"
+                   android:text="Sigatoka - Parcela Fija 12"
+                   android:background="@drawable/roundededges"
+                   android:textColor="@color/black"
+                   android:textAllCaps="false"
+                   android:layout_width="300dp"/>
+
+            <Button
+                   android:textSize="20dp"
+                   android:id="@+id/sigatoka13"
+                   android:layout_gravity="center_horizontal"  
+                   android:layout_marginTop="10dp" 
+                   android:layout_height="55dp"
+                   android:text="Sigatoka - Parcela Fija 13"
+                   android:background="@drawable/roundededges"
+                   android:textColor="@color/black"
+                   android:textAllCaps="false"
+                   android:layout_width="300dp"/>
+
+            <Button
+                   android:textSize="20dp"
+                   android:id="@+id/sigatoka14"
+                   android:layout_gravity="center_horizontal"  
+                   android:layout_marginTop="10dp" 
+                   android:layout_height="55dp"
+                   android:text="Sigatoka - Parcela Fija 14"
+                   android:background="@drawable/roundededges"
+                   android:textColor="@color/black"
+                   android:textAllCaps="false"
+                   android:layout_width="300dp"/>
+
+            <Button
+                   android:textSize="20dp"
+                   android:id="@+id/sigatoka15"
+                   android:layout_gravity="center_horizontal"  
+                   android:layout_marginTop="10dp" 
+                   android:layout_height="55dp"
+                   android:text="Sigatoka - Parcela Fija 15"
+                   android:background="@drawable/roundededges"
+                   android:textColor="@color/black"
+                   android:textAllCaps="false"
+                   android:layout_width="300dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+	<ListView
+        android:listSelector="@android:color/transparent"
+        android:divider = "@color/amarillo"
+        android:padding="10dp"
+		android:layout_width="330dp"
+		android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+		android:id="@+id/listPuntos" />
+
+    <Button
+           android:textSize="20dp"
+           android:id="@+id/finalizarRecorrido"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginTop="10dp"            
+           android:layout_height="55dp"
+           android:text="Finalizar Recorrido"
+           android:background="@color/colorPrimary"
+           android:textColor="@color/amarillo"
+           android:textAllCaps="false"
+           android:layout_width="300dp"/>
+
+</LinearLayout>

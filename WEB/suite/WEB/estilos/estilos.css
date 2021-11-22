@@ -1,0 +1,165 @@
+/*Se quita los scrollbar del cuerpo de la pagina*/
+body{
+  overflow: hidden;
+}
+
+#divtabla{
+  font-family: 'Muli', Heveltica, Arial, sans-serif !important;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+}
+
+/*Clases para quitar el azul cuando se seleccionaba una fila en una tabla de datatable*/
+table.dataTable tbody tr.selected, 
+table.dataTable tbody th.selected, 
+table.dataTable tbody td.selected{
+  color: black; 
+}
+
+table.dataTable tbody>tr.selected, 
+table.dataTable tbody>tr>.selected {
+  background-color: darkgray; 
+}
+
+
+table.dataTable tbody th.focus, 
+table.dataTable tbody td.focus{
+  box-shadow: none;
+}
+
+@media only screen and (max-width: 767px){
+  #divtabla div.bootstrap-select > div.dropdown-menu{
+    min-width: auto !important;
+    max-width: calc(100vw - 100px);
+  }
+}
+
+/*Modales de las vistas*/
+.swal2-contentwrapper{
+  font-family: 'Muli', Heveltica, Arial, sans-serif !important;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+}
+
+.swal2-container .swal2-close{
+  outline: none;
+}
+
+.popover {
+  z-index: 1035 !important;
+}
+
+/************************************************************************************/
+
+/* estilos mensajes de error */
+.swal2-container #divForm .errorInput{
+    border: solid 2px red !important;
+}
+
+.swal2-container #divForm .errorInput:focus ~ label{
+    color: red !important;
+}
+
+.swal2-container #divForm .errorInput:valid ~ label{
+    color: red !important;
+}
+
+.swal2-container #valorForm .errorInput{
+    border: solid 2px red !important;
+}
+
+.swal2-container #valorForm .errorInput:focus ~ label{
+    color: red !important;
+}
+
+.swal2-container #valorForm .errorInput:valid ~ label{
+    color: red !important;
+}
+
+
+#contenedorM_crear_atributo .errorInput{
+    border: solid 2px red !important;
+}
+
+#contenedorM_crear_atributo .errorInput:focus ~ label{
+    color: red !important;
+}
+
+#contenedorM_crear_atributo .errorInput:valid ~ label{
+    color: red !important;
+}
+
+.msnError{
+    color: #d93025;
+    font-size: 12px;
+}
+
+.msnError span{
+    vertical-align: middle;
+}
+
+.msnError i{
+    vertical-align: middle;
+}
+
+/*****************************************************************************************/
+
+.margin-top-name{
+  margin-top: 23px;
+}
+
+.border-r-select{
+  border-radius: 5px;
+}
+
+.margin-top-select{
+  margin-top: 5px;
+}
+
+/*****************************************************************************************/
+
+.disableEvents{
+  pointer-events: none;
+}
+
+/*****************************************************************************************/
+
+.inner::-webkit-scrollbar-track
+{
+  background-color: transparent;
+}
+
+.inner::-webkit-scrollbar
+{
+  height: 8px;
+  width: 8px;
+}
+
+.inner::-webkit-scrollbar-thumb
+{
+  border-radius: 30px;
+  background-color: #999;
+}
+
+/*****************************************************************************************/
+
+/*ELIMINA BORDE NEGRO DE SELECTORES*/
+a {
+  outline: none!important;
+}
+
+/*AJUSTA CAJAS DE OPCIONES DE SELECTORES PARA QUE SE VEAN BIEN EN MOVIL*/
+@media only screen and (max-width: 1024px){
+  .dropdown-menu {
+    overflow: unset!important;
+    min-width: unset!important;
+  }
+  
+  .dropdown-menu .inner {
+    width: 168px!important;
+  }
+}

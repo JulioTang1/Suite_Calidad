@@ -1,0 +1,57 @@
+
+<div class="card">
+  <!-- titulo de la opcion desplegable -->
+  <!-- todos los textos deben estar dentro de un span para que cuando la barra se cierre
+  estos textos desaparezcan y cuando se abra cuelvan a aparecer -->
+  <div class="titulosOpc icono-animado desactive" data-toggle="collapse" href="#collapse_P_2_1">
+      <!-- para los iconos de las opciones principales siempre es la misma clase como se 
+      observa a continuación, con la clase icono -->
+      <i class="material-icons md-22 iconoP">local_dining</i>
+      <span>Item #1</span>
+  </div>
+  <div id="collapse_P_2_1" class="collapse" data-parent="#accordion">
+    
+    <div id="subAcordeon2"></div>
+    
+  </div>
+</div>
+
+<div class="card">
+  <!-- titulo sin opcion desplegable -->
+  <div class="titulosOpc picked" data-toggle="collapse" href="#collapse_P_2_2">
+      <i class="material-icons md-22  iconoP">android</i>
+      <span>Item #2</span>
+  </div>
+  <!-- Se deja este div vacío para que interactúe con sus elementos hermanos, que cuando 
+  un collapse este abierte y se de click aqui, este cierre el que este abierto --> 
+  <div id="collapse_P_2_2" class="collapse" data-parent="#accordion"></div>
+
+</div>
+
+<div class="card">
+  <div class="titulosOpc icono-animado desactive" data-toggle="collapse" href="#collapse_P_2_3">
+      <i class="material-icons md-22 iconoP">bug_report</i>
+      <span>Item #3</span>
+  </div>
+  <div id="collapse_P_2_3" class="collapse" data-parent="#accordion">
+    <div class="card-body">
+      <!-- opciones de la opcion desplegable, puede ser otro acordión o ya como tal una opción -->
+      <li class="picked">
+        <i class="material-icons md-12 iconoS">radio_button_unchecked</i>
+        <span>Sub Item #1</span>
+      </li>
+
+      <li class="picked">
+        <i class="material-icons md-12 iconoS">radio_button_unchecked</i>
+        <span>Sub Item #2</span>
+      </li>
+
+      <li class="picked">
+        <i class="material-icons md-12 iconoS">radio_button_unchecked</i>
+        <span>Sub Item #3</span>
+      </li>
+    </div>
+  </div>
+</div>
+
+<!-- <script src="vistas/Sidebar/HTML/Acordeones/scripts/ready.js"></script> -->

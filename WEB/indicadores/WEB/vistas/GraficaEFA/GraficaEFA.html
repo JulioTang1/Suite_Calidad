@@ -1,0 +1,28 @@
+<link rel="stylesheet" type="text/css" href="vistas/GraficaEFA/estilos/estilos.css">
+
+<div id="contenedor_GraficaEFA" class="container-fuild">
+  
+	<div id="divSelectVista" class="d-flex  flex-wrap">
+		<div id="calendarPlanning">
+			<i class="fa fa-calendar"></i>&nbsp;
+			 <span></span> <i class="fa fa-caret-down"></i>
+		</div>	
+		<select  id="selectDepartamento" class='selectpicker' multiple>
+			<option disabled></option>
+		</select>
+		<select  id="selectMunicipio" class='selectpicker' multiple>
+			<option disabled></option>
+		</select>
+		<select  id="selectFinca" class='selectpicker' data-max-options="1" multiple>
+			<option disabled></option>
+		</select>
+	</div>
+	<div id="mainGraph"></div>
+  
+</div>
+
+<script src="vistas/GraficaEFA/scripts/variables.js"></script>
+<script src="vistas/GraficaEFA/scripts/comunicaciones.js"></script>
+<script src="vistas/GraficaEFA/scripts/funciones.js"></script>
+<script src="vistas/GraficaEFA/scripts/gestionDOM.js"></script>
+<script src="vistas/GraficaEFA/scripts/ready.js"></script>

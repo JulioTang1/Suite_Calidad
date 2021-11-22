@@ -1,0 +1,85 @@
+
+#contenedorT_Ini_Sesion_Modulo {
+  /*evita que se pueda seleccionar el texto en la barra*/
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#contenedorT_Ini_Sesion_Modulo #fechas_historico{
+  background: #fff; 
+  cursor: pointer; 
+  padding: 3px 10px; 
+  border: 1px solid #ccc; 
+  text-align: center;
+  border-radius: 0.25rem;
+}
+
+#contenedorT_Ini_Sesion_Modulo #fechas_historico span{
+  vertical-align: initial;
+  font-size: medium;
+}
+
+/* estilos datatable */
+#contenedorT_Ini_Sesion_Modulo .container_DataTable {
+  height: calc(100vh - 20px);
+}
+
+#contenedorT_Ini_Sesion_Modulo .container_DataTable .bootstrap-select{
+  width: 50px !important;
+  padding: 0 !important;
+}
+
+#contenedorT_Ini_Sesion_Modulo tbody{
+ cursor:pointer;
+}
+
+/****************************************************************************************/
+
+#contenedorT_Ini_Sesion_Modulo .row{
+  margin: 0 5px 10px 5px;
+}
+
+
+/****************************************************************************************/
+
+#contenedorT_Ini_Sesion_Modulo .daterangepicker::-webkit-scrollbar-track
+{
+  background-color: transparent;
+}
+
+#contenedorT_Ini_Sesion_Modulo .daterangepicker::-webkit-scrollbar
+{
+  height: 8px;
+  width: 8px;
+}
+
+#contenedorT_Ini_Sesion_Modulo .daterangepicker::-webkit-scrollbar-thumb
+{
+  border-radius: 30px;
+  background-color: #999;
+}
+
+/****************************************************************************************/
+
+@media only screen and (max-width: 583px) {
+  #contenedorT_Ini_Sesion_Modulo .daterangepicker{
+    overflow: auto;
+    height: 230px;
+    margin-right: 5px;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  #contenedorT_Ini_Sesion_Modulo .daterangepicker{
+    width: 255px;
+  }
+}
+
+@media only screen and (max-width: 526px){
+
+  #contenedorT_Ini_Sesion_Modulo #fechas_historico span{
+    font-size: large;
+  }
+}

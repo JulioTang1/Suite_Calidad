@@ -1,0 +1,233 @@
+
+/* Sidebar */
+#sidebar-wrapper {
+  z-index: 1040;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  width: 64px;
+  height: 100%;
+  background-color: #2c323f;
+  font-family: 'Muli', Heveltica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.5;
+  color: white;
+  
+
+  /*evita que se pueda seleccionar el texto en la barra*/
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+}
+
+.brand-sidebar {
+  background: transparent;
+  box-shadow: -3px -3px 20px 0px rgba(0, 0, 0, .2);
+  font-size: 2.1rem;
+  line-height: 0;
+  padding: 10px 12px;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: inherit;
+  z-index: 100;
+  height: 58px;
+}
+
+.logo-wrapper {
+  font-size: 25px;
+  line-height: 17px !important;
+  margin: 0;
+  white-space: nowrap;
+  align-items: center;
+}
+
+.logo-wrapper span{
+  visibility: hidden;
+  vertical-align: -webkit-baseline-middle;
+}
+
+#imagenSidebar{
+  float: left;
+}
+
+#tituloSidebar{
+  width: 50%; 
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.sidebar-nav{
+  padding-bottom: 22px;
+  white-space: nowrap;
+  box-shadow: -4px 5px 20px 0px rgba(0, 0, 0, .4);
+}
+
+.size_width{
+  width: 38px;
+  height: auto;
+  vertical-align: -webkit-baseline-middle;
+}
+
+/*acordiones*/
+
+#sidebar-wrapper #accordion span{
+  visibility: hidden;
+}
+
+#sidebar-wrapper #accordion .card {
+  background-color: transparent; 
+  border: 0; 
+  border-radius: 0; 
+}
+
+.titulosOpc {
+  padding-left: 19px;
+  margin-right: 10px;
+  background-color: transparent;
+  border-bottom: 0;
+  cursor: pointer;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.tituloP{
+  padding-left: 20px;
+  padding-top: 5px;
+  font-size: 15px;
+  text-transform: uppercase;
+  line-height: 35px;
+}
+
+.iconoP {
+  padding-right: 1.3rem;
+}
+
+/*animación de rotación de flechas en opciones desplegables*/
+
+.icono-animado
+{
+  font-weight: 400;
+  margin: 0;
+}
+
+.icono-animado:after
+{
+  font-family: 'Material Icons';
+  font-size: 18px;
+
+  position: absolute;
+  right: 10px;
+
+  content: 'keyboard_arrow_right';
+  transition: transform .2s linear, opacity .15s linear .2s, -webkit-transform .2s linear;
+}
+
+.icono-animado.active:after
+{
+  -webkit-transform:  rotate(90deg);
+    -moz-transform:   rotate(90deg);
+      -ms-transform:  rotate(90deg);
+        -o-transform: rotate(90deg);
+          transform:  rotate(90deg); 
+}
+
+.icono-animado.desactive:after
+{
+  content: '';
+}
+
+/************************************************************************************************************/
+#scrollbar{
+  position: relative;
+  overflow: auto;
+  /*height: calc(100% - 38px);*/
+  height: 100%;
+}
+
+#sidebar-wrapper #accordion .card .card-body {
+  padding: 0.3rem 0px;
+  margin-right: 16px;
+  align-items: center;
+  cursor: pointer;
+}
+
+/*opciones de la opcion desplegable del collapse*/
+#sidebar-wrapper #accordion .card .card-body li {
+  padding-left: 24px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  list-style:none
+}
+
+.HoverActiveDark {
+  background-color: #16161f82 !important; 
+}
+
+.HoverActiveLight {
+  background-color: #2227331f !important; 
+}
+
+.desplegableDark {
+  background-color: #222733 !important;
+}
+
+.desplegableLight {
+  background-color: #f3f2f2 !important;
+}
+
+.subDesplegableDark {
+  background-color: #181a1fb3 !important;
+}
+
+.subDesplegableLight {
+  background-color: #e0e0e0 !important;
+}
+
+.iconoS {
+  padding-right: 24px;
+}
+
+.iconoT {
+  padding-right: 18px;
+}
+
+.titulosOpcSec {
+  padding-left: 24px;
+  margin-right: 16px;
+  background-color: transparent;
+  border-bottom: 0;
+  cursor: pointer;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/*seleccionar un elemento*/
+.item_selected {
+  /*colores del gradiente, es un gradiente lineal de izquierda a derecha*/
+  background-image: linear-gradient(to right, #292929 , #007350);
+  border-radius: 0px 5px 5px 0px;
+  box-shadow: 1px 1px 3px 0px #007350;
+  color: white;
+}
+
+.borde_left_principal {
+  background-repeat: no-repeat;
+  background-size: 4px 100%;
+  background-image: linear-gradient(to bottom, #292929 0%, #007350 100%);
+}
+
+.borde_left_secondary {
+  padding-left: 20px;
+  margin-left: 4px;
+  background-repeat: no-repeat;
+  background-size: 4px 100%;
+  background-image: linear-gradient(to bottom, #292929 0%, #007350 100%);
+}

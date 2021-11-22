@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/amarillo"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main">
+
+    <android.support.design.widget.TextInputLayout
+        android:padding="20dp"
+        android:layout_gravity="center_horizontal"
+        android:theme="@style/TextLabel"
+        android:id="@+id/text"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content">
+        
+        <EditText
+            
+            android:textColor="@color/black"
+            android:theme="@style/TextLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:hint="Responsable"
+            android:inputType="textMultiLine"
+            android:lines="5"/>
+        
+    </android.support.design.widget.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:paddingRight="30dp"
+        android:gravity="right"
+        android:layout_width="340dp"
+        android:layout_height="45dp">
+
+            <Button
+               android:layout_height="40dp"
+               android:layout_width="100dp"
+               android:textAllCaps="false"
+               android:id="@+id/guardar"
+               android:text="Guardar"
+               android:textSize="20dp"
+               android:background="@color/colorPrimary"
+               android:textColor="@color/amarillo"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

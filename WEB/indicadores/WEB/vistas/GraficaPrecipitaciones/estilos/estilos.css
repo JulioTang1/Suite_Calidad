@@ -1,0 +1,85 @@
+#contenedor_GraficaPrecipitaciones {
+  font-family: 'Muli', Heveltica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.5;
+  /*evita que se pueda seleccionar el texto en la barra*/
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.d_flex > div.bootstrap-select{
+  margin-left: 5px;
+  margin-bottom: 10px
+}
+
+/*Calendar*/
+#calendar, #calendarPlanning, #calendarPlanning2 {
+  background: #fff;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid #CCC;
+  width: 170px;
+  height: 32px;
+  border-radius: .25rem;
+  font-size: 11px!important;
+}
+
+.accordionGraph * {
+  font-size: 11px!important; 
+}
+
+.drp-buttons .btn-primary {
+    background-color: #357ebd;
+    border-color: transparent;
+    color: #fff;
+}
+
+.drp-buttons .btn-primary:focus {
+  background-color: #2B74B3 !important;
+    border-color: transparent;
+    color: #fff;
+}
+
+div.daterangepicker.opensright {
+  overflow-y: auto;
+  max-height: 290px;
+}
+
+#calendar:hover, #calendarPlanning:hover, .menu .btn-light:hover, 
+#calendarPlanning2:hover {
+  background-color: #f2f2f2;
+}
+
+#calendar:focus, #calendarPlanning:focus, #calendarPlanning2:focus, 
+.menu .btn-light:focus, .menu .form-control:focus {
+    color: #495057 !important;
+    background-color: #FFF !important;
+    border-color: #CCC !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+/*Fin Calendar*/
+
+.grafica {
+  height: calc(100vh - 50px)!important;
+}
+
+/*Estilos del menú de configuracion*/
+.dropdown.bootstrap-select {
+  height: 32px!important;
+  width: 170px!important;
+  margin-right: 10px!important;
+  margin-bottom: 5px!important;
+}
+
+.bootstrap-select * {
+  font-size: 11px!important;
+}
+
+#calendarPlanning {
+  margin-right: 10px;
+}
+/*FIN Estilos del menú de configuracion*/

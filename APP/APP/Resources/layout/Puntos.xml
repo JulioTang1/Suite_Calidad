@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/customCell">
+
+       <RelativeLayout
+            android:background="@drawable/roundededges"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:elevation="4dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="300dp"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/puntoLectura"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp"
+                android:layout_centerInParent="true"
+                android:text="E. Vasculares: 0"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:id="@+id/fechaPuntoLectura"
+                android:text="11/11/2020 11:11"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"/>
+
+            <Button
+                android:id="@+id/eliminar"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:textAllCaps="false"
+                android:textSize="13dp"
+                android:text="Eliminar"
+                android:padding="5dp"
+                android:background="@drawable/roundededgesazul"
+                android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/amarillo">
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+    
+        <ImageView
+            android:id="@+id/volverTeclado"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/leftarrow"/>
+
+        <TextView
+            android:id="@+id/text"
+            android:text="Temperatura Mínima"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+       <RelativeLayout
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/roundededges"
+            android:padding="5dp"
+            android:elevation="4dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="310dp"
+            android:layout_height="60dp">
+
+                <TextView
+                    android:id="@+id/indicador"
+                    android:layout_centerInParent="true"
+                    android:text="0"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"/>
+
+                <ImageView
+                    android:id="@+id/borrarTeclado"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/borrarText"/>
+
+        </RelativeLayout>
+
+        <GridLayout
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="10dp"
+            android:paddingTop="18dp"
+            android:layout_gravity="center"
+            android:rowCount="4"
+            android:columnCount="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_margin="10dp"
+                android:layout_height="70dp"
+                android:layout_width="88dp"
+                android:id="@+id/uno"
+                android:text="1"
+                android:textSize="50dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/amarillo"/>
+
+            <Button
+                android:layout_margin="10dp"
+                android:layout_height="70dp"
+                android:layout_width="88dp"
+                android:id="@+id/dos"
+                android:text="2"
+                android:textSize="50dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/amarillo"/>
+
+            <Button
+                android:layout_margin="10dp"
+                android:layout_height="70dp"
+                android:layout_width="88dp"
+                android:id="@+id/tres"
+                android:text="3"
+                android:textSize="50dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/amarillo"/>
+
+            <Button
+                android:layout_margin="10dp"
+                android:layout_height="70dp"
+                android:layout_width="88dp"
+                android:id="@+id/cuatro"
+                android:text="4"
+                android:textSize="50dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/amarillo"/>
+
+            <Button
+                android:layout_margin="10dp"
+                android:layout_height="70dp"
+                android:layout_width="88dp"
+                android:id="@+id/cinco"
+                android:text="5"
+                android:textSize="50dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/amarillo"/>
+
+            <Button
+                android:layout_margin="10dp"
+                android:layout_height="70dp"
+                android:layout_width="88dp"
+                android:id="@+id/seis"
+                android:text="6"
+                android:textSize="50dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/amarillo"/>
+
+            <Button
+                android:layout_margin="10dp"
+                android:layout_height="70dp"
+                android:layout_width="88dp"
+                android:id="@+id/siete"
+                android:text="7"
+                android:textSize="50dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/amarillo"/>
+
+            <Button
+                android:layout_margin="10dp"
+                android:layout_height="70dp"
+                android:layout_width="88dp"
+                android:id="@+id/ocho"
+                android:text="8"
+                android:textSize="50dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/amarillo"/>
+
+            <Button
+                android:layout_margin="10dp"
+                android:layout_height="70dp"
+                android:layout_width="88dp"
+                android:id="@+id/nueve"
+                android:text="9"
+                android:textSize="50dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/amarillo"/>
+
+            <Button
+                android:layout_margin="10dp"
+                android:layout_height="70dp"
+                android:layout_width="88dp"
+                android:id="@+id/punto"
+                android:text="."
+                android:textSize="50dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/amarillo"/>
+
+            <Button
+                android:layout_margin="10dp"
+                android:layout_height="70dp"
+                android:layout_width="88dp"
+                android:id="@+id/cero"
+                android:text="0"
+                android:textSize="50dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/amarillo"/>
+
+            <Button
+                android:layout_margin="10dp"
+                android:layout_height="70dp"
+                android:layout_width="88dp"
+                android:id="@+id/ok"
+                android:text="OK"
+                android:textSize="50dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/amarillo"/>
+
+        </GridLayout>
+
+</LinearLayout>

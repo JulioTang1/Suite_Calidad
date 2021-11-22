@@ -1,0 +1,375 @@
+
+#contenedorEstado_Usuario {
+  padding: 10px 8px !important;
+  -webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+@media only screen and (orientation: portrait){
+  #contenedorEstado_Usuario{
+    padding: 10px 0 0 0 !important;
+  }
+}
+
+/*********************************************************************/
+.margin-top-app {
+  margin-top: 40px;
+}
+
+#contenedorEstado_Usuario .container_DataTable {
+  height: calc(100vh - 25px);
+}
+
+#contenedorEstado_Usuario .container_DataTable .bootstrap-select{
+  width: 50px !important;
+  padding: 0 !important;
+}
+
+.popover #edit{
+  color: #28a745;
+}
+
+#contenedorEstado_Usuario tbody{
+  cursor:pointer;
+ }
+ 
+#contenedorEstado_Usuario .boton-desabilitado{
+  opacity: .65;
+  cursor: default !important;
+}
+
+.swal2-popup{
+  overflow-x: visible!important;
+  overflow-y: visible!important;
+}
+
+/* Sube en pantalla el contenedor del modal */
+.swal2-container{
+  padding-bottom: 8rem;
+}
+
+#swal2-content input               {
+  font-size:18px;
+  padding:8px 0px 5px 12px;
+  border-radius: 4px;
+  display:block;
+  border: 1px solid #ced4da;
+  width:235px;
+  margin-top: 18px;
+}
+/* En focus, no mostrar outline (borde azul) */
+#swal2-content input:focus{ 
+    border:2px solid #007bff;
+}
+
+
+.boton{
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  background-color: transparent;
+  border: 1px solid transparent;
+  letter-spacing: .5px;
+  padding: .375rem .75rem;
+  border-radius: .25rem;
+  transition: color .15s;
+  background-color: #007bff;
+  color:white!important;
+  cursor:pointer;
+}
+
+.boton-desabilitado{
+    background-color: #5aaaff!important;
+}
+
+.boton-popover-desabilitado{
+   color: #74c687!important;
+}
+
+.blue{
+    float: right;
+    background-color: #007bff; 
+    box-shadow: 1px 1px 7px 0px  #007bff;
+}
+
+.red{
+    float: right;
+    background-color: #dc3545;
+    box-shadow: 1px 1px 7px 0px  #dc3545; 
+}
+
+#selectorE > div,
+#selectorR > div{
+  width: 100%;
+}
+
+.border-r-select {
+  border-radius: 5px;
+}
+
+/*switch************/
+.switch-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch-label {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 500;
+  text-align: left;
+  top: 30px;
+}
+
+#divForm .switch-label {
+  width: 80%;
+}
+
+.checkResumen .switch-label {
+  top: 3px;
+}
+
+.switch-label:before, .switch-label:after {
+  content: "";
+  position: absolute;
+  margin: 0;
+  outline: 0;
+  top: 50%;
+  -ms-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.switch-label:before {
+  left: 1px;
+  width: 34px;
+  height: 17px;
+  background-color: #9E9E9E;
+  border-radius: 8px;
+}
+
+.switch-label:after {
+  left: 0;
+  width: 17px;
+  height: 17px;
+  background-color: #FAFAFA;
+  border-radius: 50%;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.098), 0 1px 5px 0 rgba(0, 0, 0, 0.084);
+}
+
+.switch-label .toggle--on {
+  padding-left: 50px;
+  display: none;
+}
+
+.switch-label .toggle--off {
+  padding-left: 50px;
+  display: inline-block;
+}
+
+.switch-input:checked + .switch-label:before {
+  background-color: #6C96BB85;
+}
+
+.switch-input:checked + .switch-label:after {
+  background-color: #3276B1;
+  -ms-transform: translate(125%, -50%);
+  -webkit-transform: translate(125%, -50%);
+  transform: translate(125%, -50%);
+}
+
+.switch-input:checked + .switch-label .toggle--on {
+  display: inline-block;
+}
+
+.switch-input:checked + .switch-label .toggle--off {
+  display: none;
+}
+
+.checkResumen {
+  margin-left: 10px;
+}
+
+
+/* INPUTS ESTILO MATERIAL DESIGN  */
+
+/* */
+.div-input-md            { 
+  position:relative; 
+  margin-bottom:5px; 
+}
+/* estilo del input */
+#divForm input.caja {
+  font-size:18px;
+  padding:8px 0px 5px 12px;
+  border-radius: 4px;
+  display:block;
+  border: 1px solid #ced4da;
+  width:100%;
+  margin-top: 18px;
+  outline: 0;
+  transition: border-color 0.3s;
+}
+/* En focus, no mostrar outline (borde azul) */
+#divForm input.caja:focus{ 
+    border:2px solid #007bff;
+    outline: none;
+}
+
+/* estilo del label */
+#divForm label.caja {
+  color:#999; 
+  font-size:16px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  background-color: white;
+  left:16px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+#divForm label.disabled {
+    padding: 0px 8px;
+    color: #9B9B9B;
+    font-size: 14px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    background-color: #EBEBE4;
+    left: 10px;
+    top: -12px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+    border-radius: 7px;
+}
+
+#divForm input.caja:focus ~ label.caja {
+    color:#007bff!important;
+    background-color: white;
+    padding: 0px 8px;
+    left:10px;
+    top:-12px;
+    font-size:14px;
+}
+
+/*label en estado activo */
+#divForm input.caja:valid ~ label.caja {
+  padding: 0px 8px;
+  left:10px;
+  top:-12px;
+  font-size:14px;
+  color:#9b9b9b;
+}
+
+#divForm .bootstrap-select{
+  width: 100%;
+}
+
+.input_pad{
+  padding-left: 60px!important;
+}
+
+
+/* Estilos Popoever */
+.popover #edit{
+  color: #28a745;
+}
+
+/* Modal Sweet Alert*/
+/* Muestra overflow del selectpicker*/
+.swal2-popup{
+  overflow-x: visible!important;
+  overflow-y: visible!important;
+}
+
+/* Sube en pantalla el contenedor del modal */
+.swal2-container{
+  padding-bottom: 8rem;
+}
+
+
+/* Area de texto para descripcion */
+
+.pad_inputs{
+  padding-left: 54px;
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 88%;
+  border: 1px solid #ced4da;
+  outline: 0;
+  font-size:18px;
+  border-radius: 4px;
+  color: #000;
+  padding: 7px;
+  background: transparent;
+  transition: border-color 0.3s;
+}
+
+.form__field::placeholder {
+  color: transparent;
+}
+
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 16px;
+  cursor: text;
+  top: 20px;
+  left:40px;
+}
+
+.form__group label,
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 7px;
+  left: 47px;
+  padding: 0 10px;
+  display: block;
+  transition: 0.2s;
+  font-size: 14px;
+  color: #9b9b9b;
+}
+
+.form__field:focus ~ .form__label {
+    color:#007bff;
+    background-color: white;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  border: 2px solid #007bff;
+}
+
+@media only screen and (max-width: 575px){
+
+  #divForm .col-sm-6 {
+    margin-top: 10px;
+  }
+
+}
+
+.errorInput{
+    border: solid 2px red !important;
+}
+
+.errorInput:focus ~ label, .errorInput:valid ~ label{
+   color: red !important;
+}

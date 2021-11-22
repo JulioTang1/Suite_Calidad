@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/amarillo"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+    
+        <ImageView
+            android:id="@+id/volverIniciarRecorrido"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/leftarrow"/>
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="220dp"
+            android:layout_height="2000dp"
+            android:src="@drawable/banasanTituloSinFondo"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <TextView
+            android:id="@+id/textFinca"
+            android:text="Finca X Sector Sector X"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+       <RelativeLayout
+        android:layout_marginTop="0dp"
+            android:id="@+id/precipitacion"
+            android:background="@drawable/roundededges"
+            android:padding="10dp"
+            android:elevation="4dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="300dp"
+            android:layout_height="70dp">
+
+            <TextView
+                android:id="@+id/textoPrecipitacion"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_centerInParent="true"
+                android:text="21/01/2021 Jue Precipitación"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"/>
+
+           <RelativeLayout
+                android:background="@drawable/roundededgesamarillo"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:elevation="4dp"
+                android:layout_centerInParent="true"
+                android:layout_width="110dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/indicadorPrecipitacion"
+                    android:layout_centerInParent="true"
+                    android:text="0"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"/>
+
+           </RelativeLayout>
+
+        </RelativeLayout>
+
+       <RelativeLayout
+            android:layout_marginTop="25dp"
+            android:id="@+id/temperaturaMinima"
+            android:background="@drawable/roundededges"
+            android:padding="10dp"
+            android:elevation="4dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="300dp"
+            android:layout_height="70dp">
+
+            <TextView
+                android:id="@+id/textoTemperaturaMinima"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_centerInParent="true"
+                android:text="Temperatura Mínima"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"/>
+
+           <RelativeLayout
+                android:background="@drawable/roundededgesamarillo"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:elevation="4dp"
+                android:layout_centerInParent="true"
+                android:layout_width="110dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/indicadorTemperaturaMinima"
+                    android:layout_centerInParent="true"
+                    android:text="0"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"/>
+
+           </RelativeLayout>
+
+        </RelativeLayout>
+
+       <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/temperatura"
+            android:background="@drawable/roundededges"
+            android:padding="10dp"
+            android:elevation="4dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="300dp"
+            android:layout_height="70dp">
+
+            <TextView
+                android:id="@+id/textoTemperatura"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_centerInParent="true"
+                android:text="Temperatura Actual"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"/>
+
+           <RelativeLayout
+                android:background="@drawable/roundededgesamarillo"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:elevation="4dp"
+                android:layout_centerInParent="true"
+                android:layout_width="110dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/indicadorTemperatura"
+                    android:layout_centerInParent="true"
+                    android:text="0"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"/>
+
+           </RelativeLayout>
+
+        </RelativeLayout>
+
+       <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/temperaturaMaxima"
+            android:background="@drawable/roundededges"
+            android:padding="10dp"
+            android:elevation="4dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="300dp"
+            android:layout_height="70dp">
+
+            <TextView
+                android:id="@+id/textoTemperaturaMaxima"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_centerInParent="true"
+                android:text="Temperatura Máxima"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"/>
+
+           <RelativeLayout
+                android:background="@drawable/roundededgesamarillo"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:elevation="4dp"
+                android:layout_centerInParent="true"
+                android:layout_width="110dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/indicadorTemperaturaMaxima"
+                    android:layout_centerInParent="true"
+                    android:text="0"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"/>
+
+           </RelativeLayout>
+
+        </RelativeLayout>
+
+       <RelativeLayout
+            android:layout_marginTop="25dp"
+            android:id="@+id/humedad"
+            android:background="@drawable/roundededges"
+            android:padding="10dp"
+            android:elevation="4dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="300dp"
+            android:layout_height="70dp">
+
+        <TextView
+            android:id="@+id/textoHumedad"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_centerInParent="true"
+            android:text="Humedad Relativa"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+
+           <RelativeLayout
+                android:background="@drawable/roundededgesamarillo"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:elevation="4dp"
+                android:layout_centerInParent="true"
+                android:layout_width="110dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/indicadorHumedad"
+                    android:layout_centerInParent="true"
+                    android:text="0"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"/>
+
+           </RelativeLayout>
+
+        </RelativeLayout>
+
+    <Button
+        android:textSize="20dp"
+        android:id="@+id/recorridoFinca"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_height="55dp"
+        android:text="Iniciar Recorrido"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_width="300dp"/>
+
+</LinearLayout>

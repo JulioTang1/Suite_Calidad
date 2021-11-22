@@ -1,0 +1,47 @@
+<link rel="stylesheet" type="text/css" href="vistas/LimiteIndicadores/estilos/estilos.css">
+
+<div id="contenedorLimiteIndicadores" class="container-fuild">
+
+	<div id="divSelectVista" class="d-flex  flex-wrap">
+		<select  id="selectEdad" class='selectpicker' data-max-options="1" multiple>
+			<option disabled></option>
+		</select>
+		<select  id="selectInfeccion" class='selectpicker' data-max-options="1" multiple>
+			<option disabled></option>
+		</select>
+		<select  id="selectTipoFinca" class='selectpicker' data-max-options="1" multiple>
+			<option disabled></option>
+		</select>
+		<div class="d-flex">
+			<div class="form-check oculto">
+				<input type="checkbox" class="form-check-input" id="semaforoActivo" checked>
+				<label class="form-check-label" for="semaforoActivo"></label>
+			</div>
+			<label class="oculto labelSemaforo" for="semaforoActivo">Habilitar para mapa de calor</label>
+		</div>
+	</div>
+	<div class="LimiteIndicadoresExterno">
+		<div class="LimiteIndicadores">
+			<div class="row">
+				<div class="col-lg-8">
+					<div id="divTabla" class="c_shadow rounded"></div>
+				</div>
+				<div class="col-lg-4">
+					<div id="divColor" class="c_shadow rounded"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div id="divRango" class="c_shadow rounded"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<script src="vistas/LimiteIndicadores/scripts/variables.js"></script>
+<script src="vistas/LimiteIndicadores/scripts/comunicaciones.js"></script>
+<script src="vistas/LimiteIndicadores/scripts/funciones.js"></script>
+<script src="vistas/LimiteIndicadores/scripts/gestionDOM.js"></script>
+<script src="vistas/LimiteIndicadores/scripts/ready.js"></script>

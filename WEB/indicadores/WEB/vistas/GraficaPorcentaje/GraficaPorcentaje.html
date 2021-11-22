@@ -1,0 +1,30 @@
+<link rel="stylesheet" type="text/css" href="vistas/GraficaPorcentaje/estilos/estilos.css">
+
+<div id="contenedor_GraficaPorcentaje" class="container-fuild">
+  
+	<div id="divSelectVista" class="d-flex  flex-wrap">
+		<div id="calendarPlanning">
+			<i class="fa fa-calendar"></i>&nbsp;
+			 <span></span> <i class="fa fa-caret-down"></i>
+		</div>	
+		<select  id="selectDepartamento" class='selectpicker' multiple>
+			<option disabled></option>
+		</select>
+		<select  id="selectMunicipio" class='selectpicker' multiple>
+			<option disabled></option>
+		</select>
+		<select  id="selectFinca" class='selectpicker' data-max-options="1" multiple>
+			<option disabled></option>
+		</select>
+		<select  id="selectGrupo" class='selectpicker' multiple>
+		</select>
+	</div>
+	<div id="mainGraph"></div>
+  
+</div>
+
+<script src="vistas/GraficaPorcentaje/scripts/variables.js"></script>
+<script src="vistas/GraficaPorcentaje/scripts/comunicaciones.js"></script>
+<script src="vistas/GraficaPorcentaje/scripts/funciones.js"></script>
+<script src="vistas/GraficaPorcentaje/scripts/gestionDOM.js"></script>
+<script src="vistas/GraficaPorcentaje/scripts/ready.js"></script>

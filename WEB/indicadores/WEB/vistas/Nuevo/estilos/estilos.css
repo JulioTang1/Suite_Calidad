@@ -1,0 +1,496 @@
+#contenedor_Nuevo {
+  font-family: 'Muli', Heveltica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.5;
+  /*evita que se pueda seleccionar el texto en la barra*/
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#divSelectVista {
+  padding: 0px 20px;
+}
+
+.d_flex > div.bootstrap-select{
+  margin-left: 5px;
+  margin-bottom: 10px
+}
+
+.table th {
+  padding: 5px!important;
+}
+
+.cf {
+  min-width: 55px;
+}
+
+/*Calendar*/
+#calendar, #calendarPlanning, #calendarPlanning2 {
+  background: #fff;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid #CCC;
+  width: 170px;
+  height: 32px;
+  border-radius: .25rem;
+  font-size: 11px!important;
+}
+
+.accordionGraph * {
+  font-size: 11px!important; 
+}
+
+.drp-buttons .btn-primary {
+    background-color: #357ebd;
+    border-color: transparent;
+    color: #fff;
+}
+
+.drp-buttons .btn-primary:focus {
+  background-color: #2B74B3 !important;
+    border-color: transparent;
+    color: #fff;
+}
+
+div.daterangepicker.opensright {
+  overflow-y: auto;
+  max-height: 290px;
+}
+
+#calendar:hover, #calendarPlanning:hover, .menu .btn-light:hover, 
+#calendarPlanning2:hover {
+  background-color: #f2f2f2;
+}
+
+#calendar:focus, #calendarPlanning:focus, #calendarPlanning2:focus, 
+.menu .btn-light:focus, .menu .form-control:focus {
+    color: #495057 !important;
+    background-color: #FFF !important;
+    border-color: #CCC !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+/*Fin Calendar*/
+
+/*Estilos del menú de configuracion*/
+.dropdown.bootstrap-select {
+  height: 32px!important;
+  width: 170px!important;
+  margin-right: 10px!important;
+  margin-bottom: 5px!important;
+}
+
+.bootstrap-select * {
+  font-size: 11px!important;
+}
+
+#calendarPlanning {
+  margin-right: 10px;
+}
+/*FIN Estilos del menú de configuracion*/
+
+#accordionGraph0 {
+  display: none!important;
+}
+
+#main {
+  padding: 10px 20px;
+}
+
+table {
+  margin-bottom: 0px!important;
+}
+
+table * {
+  font-size: 12px!important;
+}
+
+.tab-content {
+  height: CALC(100vh - 201px);
+  margin-bottom: 10px;
+}
+
+.tab-pane::-webkit-scrollbar-track
+{
+ background-color: transparent;
+}
+
+.tab-pane::-webkit-scrollbar
+{
+ height: 8px;
+ width: 8px;
+}
+
+.tab-pane::-webkit-scrollbar-thumb
+{
+ border-radius: 30px;
+  background-color: #999;
+  width: calc(100vw - 64px);
+  margin: 0;
+  padding: 10px 8px !important;
+}
+
+.tab-pane {
+  overflow: auto;
+  height: CALC(100vh - 201px);
+}
+
+th {
+  text-align: center!important;
+}
+
+th:nth-child(1) {
+  width: 80px!important;
+}
+
+#pxp th:nth-child(6) {
+  width: 40%!important;
+}
+
+#viisem th:nth-child(5), #xsem th:nth-child(5) {
+  width: 40%!important;
+}
+
+#pfsem th:nth-child(8) {
+  width: 30%!important;
+}
+
+td {
+  text-align: center!important;
+  padding: 0px!important;
+  vertical-align: middle!important;
+}
+
+td input {
+  text-align: center!important;
+  border-radius: 0px!important;
+  border: none !important;
+  background-color: #0000!important;
+  height: 35px!important;
+}
+
+#total {
+  font-weight: bolder;
+}
+
+#guardar {
+  width: 220px;
+}
+
+/*Navbar*/
+.wrapper {
+  border-top-right-radius: .25rem;
+  border-top-left-radius: .25rem;
+  border-top: 1px solid rgb(216, 216, 216);
+  border-left: 1px solid rgb(216, 216, 216);
+  border-right: 1px solid rgb(216, 216, 216);
+  position:relative;
+  margin:0 auto;
+  overflow:hidden;
+  padding:5px;
+  height:34px;
+}
+
+.wrapper .nav-tabs .nav-link, .wrapper .nav-tabs .nav-link {
+  border-color: #dee2e6 #dee2e6 #dee2e6;
+  border-bottom: none;
+  color: #666;
+  font-size: 11px;
+}
+
+.wrapper .active {
+  margin-bottom: -1px;
+}
+
+.wrapper .nav-tabs .nav-link:hover {
+  border-color: #dee2e6 #dee2e6 #dee2e6;
+  border-bottom: none;
+  color: black;
+  background-color: rgb(252,252,252);
+  margin-bottom: -1px;
+}
+
+.wrapper .nav-tabs {
+background-color: #f7f7f7;
+}
+
+.tab-pane {
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.list {
+  position:absolute;
+  left:0px;
+  top:0px;
+  min-width:3500px;
+  margin-top:-1px;
+  margin-left: -1px;
+}
+
+.list li{
+  display:table-cell;
+  position:relative;
+  text-align:center;
+  cursor:grab;
+  cursor:-webkit-grab;
+  color:#efefef;
+  vertical-align:middle;
+}
+
+.scroller {
+font-size: 17px;
+border: 1px solid #dee2e6;
+text-align:center;
+cursor:pointer;
+display:none;
+padding:7px;
+padding-top:0px;
+white-space:no-wrap;
+vertical-align:middle;
+background-color:#fff;
+}
+
+.scroller i {
+font-size: 11px;
+}
+
+.scroller-right{
+border-top-right-radius: .25rem;
+float:right;
+}
+
+.scroller-left {
+border-top-left-radius: .25rem;
+float:left;
+}
+/****/
+
+/*CAMARA*/
+.fa-camera {
+  font-size: 20px!important;
+  color: black;
+}
+
+.fa-camera:hover {
+  font-size: 21px!important;
+  color: #046d4d;
+}
+
+.fa-camera:active {
+  font-size: 19px!important;
+  color: #046d4d;
+}
+/****/
+
+/**** Select ****/
+#main .filter-option-inner-inner {
+  text-align: center;
+}
+
+#main .container_Select,
+#main .divForm {
+  padding: 0;
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  white-space: nowrap;
+}
+
+#main .container_Select{
+  position: relative;
+}
+
+#main .container_Select .bootstrap-select {
+  width: 100%;
+}
+
+#main .container_Select > label {
+   color: #999;
+   position: absolute;
+   pointer-events: none;
+   text-overflow: ellipsis;
+   overflow: hidden;
+   max-width: calc(100% - 30px);
+   z-index: 1;
+   background-color: white;
+   padding: 0px 8px;
+   left: 14px;
+   top: -11px;
+   font-size: 13px;
+}
+
+#main .container_Select button.dropdown-toggle,
+#main .btn-light:active{
+   background: white !important;
+}
+
+#main .bootstrap-select .dropdown-toggle:focus {
+  outline: 0 !important;
+}
+
+#main #info_reg_ .bootstrap-select button.dropdown-toggle {
+  padding: .25rem .5rem;
+  font-size: .875rem;
+  line-height: 1.5;
+  border-radius: .2rem;
+}
+
+#main .bootstrap-select .dropdown-toggle:focus {
+   outline: 0 !important;
+}
+
+#main table button {
+  border-radius: 0px!important;
+  background-color: #0000!important;
+}
+
+#main table .dropdown.bootstrap-select {
+  min-width: 170px!important;
+  height: 100%!important;
+  width: 100%!important;
+  margin-right: 0px!important;
+  margin-bottom: 0px!important;
+}
+
+/*****ERROR******/
+.errorInput{
+  border: solid 2px red !important;
+}
+
+.errorInput:focus ~ label, .errorInput:valid ~ label {
+ color: red !important;
+}
+
+#formInterno .modal .modal-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 18px;
+  margin: 6px 6px 7px 6px;
+}
+#formInterno .modal .modal-title span:first-child {
+  height: 100%;
+  background: #017350;
+  margin-right: 6px;
+  padding: 1px 6px;
+  border-radius: 10px 3px 10px 3px;
+  color: #fff;
+}
+#formInterno .modal .modal-title span:last-child {
+  height: 100%;
+  font-weight: 500;
+}
+
+#formInterno .modal .infoFinca {
+  margin: 20px 1px 0px 1px;
+}
+
+#formInterno .modal button.dropdown-toggle {
+  border: 1px solid #ccc;
+}
+
+#formInterno .contenedorInput {
+  position: relative;
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  white-space: nowrap;
+}
+
+#formInterno  input {
+  font-size: 16px;
+  padding: 8px 0px 5px 12px;
+  border-radius: 4px;
+  display: block;
+  border: 1px solid #ced4da;
+  width: 170px;
+  outline: 0;
+  height: 32px;
+  transition: border-color 0.3s;
+}
+
+#formInterno  input:focus {
+  border: 2px solid #007bff;
+  outline: none;
+}
+
+#formInterno  input:disabled {
+  color: gray;
+  cursor: not-allowed;
+  background: #fafafa;
+}
+
+#formInterno label {
+  color: #999;
+  font-size: 14px;
+  font-weight: normal;
+  position: relative;
+  pointer-events: none;
+  left: 14px;
+  top: -26px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: calc(100% - 30px);
+}
+
+#formInterno input:focus ~ label {
+  color: #007bff !important;
+}
+
+#formInterno input:disabled:not(:placeholder-shown) ~ label,
+#formInterno input:valid ~ label,
+#formInterno input:focus ~ label,
+#formInterno input.InputFecha ~ label {
+  background-color: white;
+  padding: 0px 8px;
+  left: 10px;
+  top: -42px;
+  font-size: 12px;
+  height: 14px;
+}
+
+
+#formInterno  input.InputFecha {
+  cursor: pointer;
+  text-align: center;
+  padding: 8px 0px 5px 0px;
+}
+
+#formInterno  input.errorInput:focus ~ label {
+  color: red !important;
+}
+
+#formInterno .container_btn_control {
+  text-align: end;
+  margin-bottom: 8px;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+#formInterno > div {
+  padding-right: 10px;
+  height: 42px;
+}
+
+/*SPINNER*/
+.spinnerPosition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.spinner-border {
+  height: 60px;
+  width: 60px;
+  font-size: 25px;
+}

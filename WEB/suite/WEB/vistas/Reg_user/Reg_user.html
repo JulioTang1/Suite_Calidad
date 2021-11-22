@@ -1,0 +1,90 @@
+
+<link rel="stylesheet" type="text/css" href="vistas/Reg_user/estilos/estilos.css">
+
+
+<div id="contenedorReg_user" class="container">
+	<div class="row">
+		<!-- se craga el titulo y la imagen del login dinamicamente -->
+		<div class="col-md-12 titulo tituloAnimation">
+			<span>Suite Banasan</span>
+		</div>
+
+		<div class="col-md-6" id="imagen_logo">
+			<img draggable="false" draggable="false" src="" class="logo_login">
+		</div>
+
+		<div class="col-md-6" id="signin"> 
+
+			<div class="row">
+				<div class="col-md-12 access">
+					<span>
+						Solicitud de Acceso
+					</span>
+				</div>
+				<div class="col-md-12">
+					<div class="div-input-md">
+						<input id="UserReg" type="text" autocomplete="off" required disabled>
+						<label>Usuario</label>
+					</div> 
+				</div>
+				<div class="col-md-6">
+					<div class="div-input-md">
+						<input id="nombres" type="text" autocomplete="off" required disabled>
+						<label>Nombre</label>
+					</div> 
+				</div>
+				<div class="col-md-6">
+					<div class="div-input-md">
+						<input id="apellidos" type="text" autocomplete="off" required disabled>
+						<label>Apellido</label>
+					</div> 
+				</div>
+				<div class="col-md-12">
+					<div class="div-input-md">
+						<input id="nombre_usuario" type="text" autocomplete="off" required disabled>
+						<label>Nombre completo</label>
+					</div> 
+				</div>
+				<div class="col-md-12">
+					<div class="div-input-md">
+						<input id="email" type="text" autocomplete="off" required disabled>
+						<label>Correo electrónico</label>
+					</div> 
+				</div>
+				<div class="col-md-6">
+					<div class="cargarFoto">
+						<form id="fileLoad" enctype ="multipart/form-data" method="POST">
+							<input type="file" class="" name="File" id="inputFile"
+							accept="image/*, image/heic, image/heif" hidden>
+							<label id="subirFoto" for="inputFile"> 
+								<i class="material-icons">add_a_photo</i>
+								<span>Subir foto</span>
+							</label>
+						</form>
+					</div>
+					<div class="msnError"></div>
+				</div>
+				<div class="col-md-12 btn-access">
+					<button type="button" class="btn btn-success" id="CrearAcceso">
+						Confirmar
+					</button>
+					<button type="button" class="btn btn-danger" id="CancelarAcceso">
+						Cancelar
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal para el formulario de la solicitud de acceso -->
+	<div class="modal" id="ModalAcceso">
+		<div class="modal-dialog  modal-dialog-centered" id="createModal"></div>
+	</div>
+
+</div>
+
+<script src="vistas/Reg_user/scripts/variables.js"></script>
+<script src="vistas/Reg_user/scripts/comunicaciones.js"></script>
+<script src="vistas/Reg_user/scripts/funciones.js"></script>
+<script src="vistas/Reg_user/scripts/gestionDOM.js"></script>
+<script src="vistas/Reg_user/scripts/ready.js"></script>

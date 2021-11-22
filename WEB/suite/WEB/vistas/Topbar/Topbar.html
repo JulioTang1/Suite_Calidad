@@ -1,0 +1,83 @@
+
+<link rel="stylesheet" type="text/css" href="vistas/Topbar/estilos/estilos.css">
+
+
+<div id="contenedorTopbar" class="container">
+	<!-- Topbar content -->
+	<nav class="navbar navbar-expand-md" id="Topbar-wrapper">
+
+		<div class="dropdown">
+			<div id="logo_OPC" data-toggle="dropdown">
+    			<img draggable="false" class="logo-wrapper" src="">
+			</div>
+			<!-- Links -->
+			<div class="dropdown-menu" id="menuApp"></div>
+
+		</div>
+
+		<!-- Nombre de la vista actual en el topbar -->
+		<div id="NameViewTopBar" class="ml-auto"></div>
+		
+		<div id="addFavorite" class="ml-auto" style="display: none;">
+			<div class="OpcMenuFavorite">
+				<a class="navbar-brand navbar-right"></a>
+			</div>
+		</div>
+
+		<!-- logo - user -->
+		<div id="MenuUser">
+			<div class="OpcMenuUser" data-toggle="dropdown">
+				<a class="navbar-brand navbar-right">
+					<img draggable="false" src="vistas/Topbar/imagenes/user.png" alt="Img_User">
+				</a>
+				<div class="ArrowTopUser"></div>
+				<div class="ArrowTopShadowUser"></div>
+			</div>
+			
+			<!-- Opciones del menu desplegable del logo - user -->
+			<div class="dropdown-menu dropdown-menu-right users">
+
+				<a class="text-center" id="TopName">
+					<span></span>
+				</a>
+				
+				<div class="dropdown-divider"></div>
+
+				<div class="dropdown-header title-header">Configuración</div>
+				<a class="dropdown-item" id="editarPerfil">
+					<i class="material-icons">settings_applications</i>
+					<span>Visualizar perfil</span>
+				</a>
+				<a class="dropdown-item" id="editarFoto">
+					<i class="material-icons">photo_library</i>
+					<span>Editar foto</span>
+				</a>
+
+				<div class="dropdown-divider"></div>
+
+				<a class="dropdown-item" id="back_APP" style="display: none;">
+					<i class="material-icons">reply</i>
+					<span>Ir a inicio</span>
+				</a>
+				<a class="dropdown-item" id="close_APP">
+					<i class="material-icons">phonelink_off</i>
+					<span>Cerrar sesión</span>
+				</a>
+
+			</div>
+		</div>
+
+	</nav>
+
+	<!-- Modal para el formulario de la solicitud de acceso -->
+	<div class="modal" id="ModalEdit">
+		<div class="modal-dialog  modal-dialog-centered" id="createModalEdit"></div>
+	</div>
+
+</div>
+
+<script src="vistas/Topbar/scripts/variables.js"></script>
+<script src="vistas/Topbar/scripts/comunicaciones.js"></script>
+<script src="vistas/Topbar/scripts/funciones.js"></script>
+<script src="vistas/Topbar/scripts/gestionDOM.js"></script>
+<script src="vistas/Topbar/scripts/ready.js"></script>

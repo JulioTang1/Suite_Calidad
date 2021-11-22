@@ -1,0 +1,358 @@
+#contenedor_RecorridoFincas {
+  font-family: 'Muli', Heveltica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.5;
+  /*evita que se pueda seleccionar el texto en la barra*/
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#divSelectVista .d_flex > div.bootstrap-select{
+  margin-left: 5px;
+  margin-bottom: 10px
+}
+
+#tableRecorridoFincas {
+  height: calc(100vh - 117px);
+  margin: 10px;
+}
+
+/* Estilos Popoever */
+.popover #edit {
+  color: #17a2b8;
+}
+
+.popover #delete {
+  color: #A72828;
+}
+
+/*Calendar*/
+#calendar, #calendarPlanning, #calendarPlanning2 {
+  background: #fff;
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid #CCC;
+  width: 170px;
+  height: 32px;
+  border-radius: .25rem;
+  font-size: 11px!important;
+}
+
+.accordionGraph * {
+  font-size: 11px!important; 
+}
+
+.drp-buttons .btn-primary {
+    background-color: #357ebd;
+    border-color: transparent;
+    color: #fff;
+}
+
+.drp-buttons .btn-primary:focus {
+  background-color: #2B74B3 !important;
+    border-color: transparent;
+    color: #fff;
+}
+
+div.daterangepicker.opensright {
+  overflow-y: auto;
+  max-height: 290px;
+}
+
+#calendar:hover, #calendarPlanning:hover, .menu .btn-light:hover, 
+#calendarPlanning2:hover {
+  background-color: #f2f2f2;
+}
+
+#calendar:focus, #calendarPlanning:focus, #calendarPlanning2:focus, 
+.menu .btn-light:focus, .menu .form-control:focus {
+    color: #495057 !important;
+    background-color: #FFF !important;
+    border-color: #CCC !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+/*Fin Calendar*/
+
+#map,
+#tablas,
+#divdatos {
+  height: calc(100vh - 91px)!important;
+  width: 100%;
+  overflow: hidden;
+}
+
+.spinner-border {
+  font-size: 30px;
+  position: relative;
+  top: calc(50vh - 25px);
+  left: calc(50% - 30px);
+  width: 60px;
+  height: 60px;
+}
+
+/*Estilos del menú de configuracion*/
+#divSelectVista .dropdown.bootstrap-select {
+  height: 32px!important;
+  width: 170px!important;
+  margin-right: 10px!important;
+  margin-bottom: 5px!important;
+}
+
+#divSelectVista .bootstrap-select * {
+  font-size: 11px!important;
+}
+
+#calendarPlanning {
+  margin-right: 10px;
+}
+/*FIN Estilos del menú de configuracion*/
+#cargar, #volver {
+  height: 30px;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+/*Navbar*/
+.wrapper {
+  border-top-right-radius: .25rem;
+  border-top-left-radius: .25rem;
+  border-top: 1px solid rgb(216, 216, 216);
+  border-left: 1px solid rgb(216, 216, 216);
+  border-right: 1px solid rgb(216, 216, 216);
+  position:relative;
+  margin:0 auto;
+  overflow:hidden;
+  padding:5px;
+  height:34px;
+}
+
+.wrapper .nav-tabs .nav-link, .wrapper .nav-tabs .nav-link {
+  border-color: #dee2e6 #dee2e6 #dee2e6;
+  border-bottom: none;
+  color: #666;
+  font-size: 11px;
+}
+
+.wrapper .active {
+  margin-bottom: -1px;
+}
+
+.wrapper .nav-tabs .nav-link:hover {
+  border-color: #dee2e6 #dee2e6 #dee2e6;
+  border-bottom: none;
+  color: black;
+  background-color: rgb(252,252,252);
+  margin-bottom: -1px;
+}
+
+.wrapper .nav-tabs {
+background-color: #f7f7f7;
+}
+
+.tab-pane {
+border: 1px solid #ccc;
+  border-top: none;
+}
+
+@media only screen and (max-width: 992px) {
+.tab-pane {
+  height: calc(100vh - 18px);
+}
+}
+
+@media only screen and (max-width: 768px) {
+.tab-pane {
+  height: calc(100vh + 20px);
+}
+}
+
+@media only screen and (max-width: 576px) {
+.tab-pane {
+  height: calc(100vh + 63px);
+}
+}
+
+.list {
+  position:absolute;
+  left:0px;
+  top:0px;
+  min-width:3500px;
+  margin-top:-1px;
+  margin-left: -1px;
+}
+
+.list li{
+  display:table-cell;
+  position:relative;
+  text-align:center;
+  cursor:grab;
+  cursor:-webkit-grab;
+  color:#efefef;
+  vertical-align:middle;
+}
+
+.scroller {
+font-size: 17px;
+border: 1px solid #dee2e6;
+text-align:center;
+cursor:pointer;
+display:none;
+padding:7px;
+padding-top:0px;
+white-space:no-wrap;
+vertical-align:middle;
+background-color:#fff;
+}
+
+.scroller i {
+font-size: 11px;
+}
+
+.scroller-right{
+border-top-right-radius: .25rem;
+float:right;
+}
+
+.scroller-left {
+border-top-left-radius: .25rem;
+float:left;
+}
+/****/
+
+/*Datos*/
+#divdatos {
+  padding: 10px 20px;
+  overflow: auto;
+}
+
+#divdatos_int {
+  min-width: 1351px;
+}
+
+#divdatos::-webkit-scrollbar-track
+{
+ background-color: transparent;
+}
+
+#divdatos::-webkit-scrollbar
+{
+ height: 8px;
+ width: 8px;
+}
+
+#divdatos::-webkit-scrollbar-thumb
+{
+  border-radius: 30px;
+  background-color: #999;
+  margin: 0;
+  padding: 10px 8px !important;
+}
+
+#divdatos .c_shadow {
+  padding: 20px 40px;
+  margin: 20px 0px;
+  min-width: 1181px;
+}
+
+@media only screen and (max-width: 1450px) {
+  #divdatos .c_shadow {
+    width: fit-content;
+  }
+}
+
+#divdatos h6 {
+  color: #046d4d;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#divdatos .fa-camera {
+  font-size: 20px;
+  color: black;
+}
+
+#divdatos .fa-camera:hover {
+  font-size: 21px;
+  color: #046d4d;
+}
+
+#divdatos .fa-camera:active {
+  font-size: 19px;
+  color: #046d4d;
+}
+
+#divdatos .table td,
+#divdatos .table th {
+  padding: 5px;
+}
+
+#sigatoka,
+#vasculares,
+#culturales {
+  min-width: 1251px!important;
+}
+
+#sigatoka th:nth-child(1),
+#vasculares th:nth-child(1),
+#culturales th:nth-child(1) {
+  min-width: 200px!important;
+  width: 200px!important;
+  max-width: 200px!important;
+}
+
+#sigatoka th:nth-child(n+2) {
+  min-width: 90px!important;
+  width: 90px!important;
+  max-width: 90px!important;
+}
+
+#vasculares th:nth-child(n+2) {
+  min-width: 200px!important;
+  width: 200px!important;
+  max-width: 200px!important;
+}
+
+#culturales th:nth-child(n+2) {
+  min-width: 150px!important;
+  width: 150px!important;
+  max-width: 150px!important;
+}
+/*FIN Datos*/
+
+/*Informacion de una visita*/
+#divSelectVista .TituloCategoria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 18px;
+  margin: 0px 6px 7px 0px;
+}
+#divSelectVista .TituloCategoria span:first-child {
+  height: 100%;
+  background: #017350;
+  margin-right: 6px;
+  padding: 1px 6px;
+  border-radius: 10px 3px 10px 3px;
+  color: #fff;
+}
+#divSelectVista .TituloCategoria span:last-child {
+  height: 90%;
+  font-weight: 500;
+}
+
+#divSelectVista .titulo_opcion {
+  font-size: 15px!important;
+}
+/*FIN Informacion de una visita*/
+
+/*modal fotos*/
+.swal2-popup .swal2-close {
+  top: -3px;
+  right: 0px;
+}

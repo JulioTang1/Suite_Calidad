@@ -1,0 +1,349 @@
+
+#contenedorSuit_P {
+
+	/*background-color: lightgrey;*/
+	background-color: #eeeeee;
+	/*evita que se pueda seleccionar el texto en la barra*/
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none; 
+}
+
+#contenedorSuit_P .master_container{
+	margin: 10px 0px;
+    padding: 0px 6px;
+	height: 260px;
+}
+
+
+#contenedorSuit_P .master_container .title_cat{
+	padding-left: 5px;
+	height: 30px;
+	font-weight: 750;
+}
+
+#contenedorSuit_P .master_container .title_cat > span{
+	vertical-align: middle;
+}
+
+#contenedorSuit_P .master_container .grid-container {
+
+	overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    will-change: transform;
+    -webkit-overflow-scrolling: touch;
+    display: -webkit-box;
+    padding-bottom: 12px;
+    height: calc(100% - 30px);;
+}
+
+#contenedorSuit_P .master_container .grid-container::-webkit-scrollbar-track
+{
+  background-color: transparent;
+}
+
+#contenedorSuit_P .master_container .grid-container::-webkit-scrollbar
+{
+  height: 8px;
+  width: 8px;
+}
+
+#contenedorSuit_P .master_container .grid-container::-webkit-scrollbar-thumb
+{
+  border-radius: 30px;
+  background-color: #999;
+}
+
+#contenedorSuit_P .master_container .grid-container .apps{
+	background-color: white;
+	text-align: center;
+	padding: 5px 5px 10px 5px;
+	font-size: 1.3rem;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+
+	height: 100%;
+    width: 210px;
+
+	margin-left: 6px;
+    margin-right: 6px;
+
+}
+
+#contenedorSuit_P .master_container .grid-container .apps .apps_login{
+	height: 85%;
+	cursor: pointer;
+}
+
+#contenedorSuit_P .master_container .grid-container .apps .apps_login .logo_app{
+	height: 75%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all .15s ease;
+	position: relative;
+    left: 0;
+    top: 0;
+}
+
+#contenedorSuit_P .master_container .grid-container .apps .apps_login:hover .logo_app{
+	background-color: rgba(0,0,0,0.35);
+    filter: brightness(0.65);
+    border-radius: 5px;
+}
+
+#contenedorSuit_P .master_container .grid-container .apps .apps_login .logo_app img{
+	max-height: 100%;
+	border-radius: 5px;
+	width: 70%;
+}
+
+#contenedorSuit_P .master_container .grid-container .apps .apps_login .logo_app i.acceso{
+	position: absolute;
+    display: none; 
+    z-index: 2;
+    font-size: 80px;
+    color: black;
+    background: white;
+    border-radius: 50%;
+}
+
+#contenedorSuit_P .master_container .grid-container .apps .apps_login:hover .logo_app i.acceso{
+	display: block;
+}
+
+#contenedorSuit_P .master_container .grid-container .apps .apps_login .nombre_app{
+	height: 25%;
+	font-weight: bold;
+}
+
+#contenedorSuit_P .master_container .grid-container .apps .apps_login .nombre_app span{
+	vertical-align: unset;
+}
+
+#contenedorSuit_P .master_container .grid-container .apps .icons_app{
+	height: 15%;
+	display: flex;
+}
+
+#contenedorSuit_P .master_container .grid-container .apps .icons_app .users_online{
+    width: 35%;
+    text-align: center;
+}
+
+#contenedorSuit_P .master_container .grid-container .apps .icons_app .users_online .user_icon{
+    height: 70%;
+    width: 100%;
+}
+
+#contenedorSuit_P .master_container .grid-container .apps .icons_app .users_online .user_icon i{
+    vertical-align: super;
+    border-radius: 50%;
+    font-size: 27px;
+    animation-name: usuario_online;
+ 	animation-duration: 2s;
+ 	animation-iteration-count: infinite;
+}
+
+@keyframes usuario_online {
+	0%   {color: #0e5022;}
+	50%  {color: #53a93f;}
+	100% {color: #0e5022;}
+}
+
+#contenedorSuit_P .master_container .grid-container .apps .icons_app .users_online .N_online{
+	height: 30%;
+    width: 100%;
+    font-size: xx-small;
+    font-weight: bold;
+}
+
+#contenedorSuit_P .master_container .grid-container .apps .icons_app .access_app{
+    width: 65%;
+    text-align: end;
+    padding-right: 15px;
+}
+
+#contenedorSuit_P .master_container .grid-container .apps .icons_app .access_app i{
+	cursor: pointer;
+    vertical-align: initial;
+    border-radius: 50%;
+    color: #1338bd;
+    background-color: white;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+#contenedorSuit_P .master_container .grid-container .apps .icons_app .access_app i:hover{
+	color: white;
+    background-color: #1338bd;
+}
+
+/***************************************************************************************/
+
+#contenedorSuit_P .grid-infoApp{
+	/*justify-content: space-evenly;
+    align-content: space-evenly;*/
+	/*grid-template-columns: auto auto auto auto auto auto auto;*/
+	grid-template-columns: calc(30% - 7.5px) calc(70% - 7.5px) ;
+	grid-template-rows: calc(5% - 7.5px) calc(10% - 7.5px) calc(30% - 7.5px) calc(55% - 7.5px);
+	row-gap: 10px;
+    column-gap: 15px;
+    padding: 35px;
+    height: 100%;
+}
+
+#contenedorSuit_P .grid-infoApp > div {
+	background-color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+	padding: 10px 0;
+	border-radius: 5px;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.2);
+}
+
+#contenedorSuit_P .grid-infoApp .logoApp{
+	grid-column: 1 / 2;
+  	grid-row: 3 / 4;
+}
+
+#contenedorSuit_P .grid-infoApp .logoApp img{
+	height: 100%;
+}
+
+#contenedorSuit_P .grid-infoApp .Name_User{
+	display: flex;
+	grid-column: 1 / 2;
+  	grid-row: 2 / 3;
+}
+
+#contenedorSuit_P .grid-infoApp .Name_User .Name_app{
+	width: calc(100% - 150px);
+	font-size: 22px;
+    font-weight: bold;
+    text-align: start;
+    padding-left: 10px;
+}
+
+#contenedorSuit_P .grid-infoApp .Name_User .UserReg{
+	width: 150px;
+	text-align: end;
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+#contenedorSuit_P .grid-infoApp .Name_User .UserReg span{
+	vertical-align: -webkit-baseline-middle;
+}
+
+#contenedorSuit_P .grid-infoApp .Name_User .UserReg i{
+	vertical-align: -webkit-baseline-middle;
+	color: #53a93f;
+}
+
+#contenedorSuit_P .grid-infoApp .Descripcion{
+	overflow-y: auto;
+    text-align: justify;
+	padding: 15px;
+	grid-column: 1 / 2;
+  	grid-row: 4 / 5;
+}
+
+#contenedorSuit_P .grid-infoApp .Descripcion::-webkit-scrollbar-track{
+	background-color: transparent;
+}
+
+#contenedorSuit_P .grid-infoApp .Descripcion::-webkit-scrollbar{
+	height: 8px;
+	width: 8px;
+}
+
+#contenedorSuit_P .grid-infoApp .Descripcion::-webkit-scrollbar-thumb{
+	border-radius: 30px;
+	background-color: #999;
+}
+
+#contenedorSuit_P .grid-infoApp #Carrusel{
+	grid-column: 2 / 3;
+  	grid-row: 1 / 5;
+}
+
+#contenedorSuit_P .grid-infoApp #Carrusel .carousel-inner{
+	height: 100%;
+}
+
+#contenedorSuit_P .grid-infoApp #Carrusel .carousel-inner .carousel-item{
+	align-items: center;
+    height: 100%;
+}
+
+#contenedorSuit_P .grid-infoApp #Carrusel .carousel-inner .carousel-item.active,
+#contenedorSuit_P .grid-infoApp #Carrusel .carousel-inner .carousel-item-next, 
+#contenedorSuit_P .grid-infoApp #Carrusel .carousel-inner .carousel-item-prev{
+	display: flex;
+}
+
+#contenedorSuit_P .grid-infoApp #Carrusel .carousel-inner .carousel-item > img{
+	width: inherit;
+}
+
+#contenedorSuit_P .grid-infoApp #Carrusel .carousel-indicators li {
+	background-color: #5d5d5d;
+}
+
+#contenedorSuit_P .grid-infoApp #Carrusel > a{
+    opacity: 1 !important;
+}
+
+#contenedorSuit_P .grid-infoApp #Carrusel > a > i{
+    color: black;
+    font-size: 40px;
+    background-color: #ffffff80;
+    border-radius: 50%;
+}
+
+#contenedorSuit_P .grid-infoApp .botones{
+	display: flex;
+    padding: 0;
+	grid-column: 1 / 2;
+  	grid-row: 1 / 2;
+}
+
+#contenedorSuit_P .grid-infoApp .botones .back_app{
+	text-align: initial;
+    width: 50%;
+    padding-left: 10px;
+    color: #c00000;
+}
+
+#contenedorSuit_P .grid-infoApp .botones .add_app{
+	text-align: end;
+    width: 50%;
+    padding-right: 10px;
+    color: #70ad47;
+}
+
+#contenedorSuit_P .grid-infoApp .botones .back_app i,
+#contenedorSuit_P .grid-infoApp .botones .add_app i{
+	font-size: 22px;
+    vertical-align: middle;
+	cursor: pointer;
+	border-radius: 50%;
+	transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+#contenedorSuit_P .grid-infoApp .botones .back_app i:hover{
+	color: white;
+	background-color: #c00000;
+}
+
+#contenedorSuit_P .grid-infoApp .botones .add_app i:hover{
+	color: white;
+	background-color: #70ad47;
+}
+
+#contenedorSuit_P #iframeApps{
+    width: 100%;
+    height: calc(100vh - 58px);
+    border: none;
+}

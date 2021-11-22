@@ -1,0 +1,215 @@
+#contenedorCoeficientesSeveridad {
+  font-family: 'Muli', Heveltica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.5;
+  /*evita que se pueda seleccionar el texto en la barra*/
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+}
+
+#tableCoeficientesSeveridad {
+  height: calc(100vh - 40px);
+  margin: 10px;
+}
+
+/* Estilos Popoever */
+.popover #edit {
+  color: #28a745;
+}
+
+.popover #delete {
+  color: #A72828;
+}
+
+/*****ERROR******/
+.errorInput{
+    border: solid 2px red !important;
+}
+
+.errorInput:focus ~ label, .errorInput:valid ~ label {
+   color: red !important;
+}
+
+#contenedorCoeficientesSeveridad #principal {
+  margin: 15px;
+  box-shadow: 0 0 10px 3px #c7c7c7;
+  background-color: #ffffff;
+  border-radius: 0.25rem !important;
+  padding: 1rem;
+}
+
+#contenedorCoeficientesSeveridad #principal .TituloCategoria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 18px;
+  margin: 6px 6px 7px 6px;
+}
+#contenedorCoeficientesSeveridad #principal .TituloCategoria span:first-child {
+  height: 100%;
+  background: #017350;
+  margin-right: 6px;
+  padding: 1px 6px;
+  border-radius: 10px 3px 10px 3px;
+  color: #fff;
+}
+#contenedorCoeficientesSeveridad #principal .TituloCategoria span:last-child {
+  height: 100%;
+  font-weight: 500;
+}
+
+#contenedorCoeficientesSeveridad #principal .info {
+  margin: 20px 1px 0px 1px;
+}
+
+#contenedorCoeficientesSeveridad #principal button.dropdown-toggle {
+  border: 1px solid #ccc;
+}
+
+#contenedorCoeficientesSeveridad .contenedorInput {
+  position: relative;
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  white-space: nowrap;
+}
+
+#contenedorCoeficientesSeveridad  input {
+  font-size: 18px;
+  padding: 8px 0px 5px 12px;
+  border-radius: 4px;
+  display: block;
+  border: 1px solid #ced4da;
+  width: 100%;
+  outline: 0;
+  height: 38px;
+  transition: border-color 0.3s;
+}
+
+#contenedorCoeficientesSeveridad  input:focus {
+  border: 2px solid #007bff;
+  outline: none;
+}
+
+#contenedorCoeficientesSeveridad  input:disabled {
+  color: gray;
+  cursor: not-allowed;
+  background: #fafafa;
+}
+
+#contenedorCoeficientesSeveridad label {
+  color: #999;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 24px;
+  top: 6px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: calc(100% - 30px);
+}
+
+#contenedorCoeficientesSeveridad input:focus ~ label {
+  color: #007bff !important;
+}
+
+#contenedorCoeficientesSeveridad input:disabled:not(:placeholder-shown) ~ label,
+#contenedorCoeficientesSeveridad input:valid ~ label,
+#contenedorCoeficientesSeveridad input:focus ~ label,
+#contenedorCoeficientesSeveridad input.InputFecha ~ label {
+  background-color: white;
+  padding: 0px 8px;
+  left: 20px;
+  top: -12px;
+  font-size: 14px;
+}
+
+
+#contenedorCoeficientesSeveridad  input.InputFecha {
+  cursor: pointer;
+  text-align: center;
+  padding: 8px 0px 5px 0px;
+}
+
+#contenedorCoeficientesSeveridad  input.errorInput:focus ~ label {
+  color: red !important;
+}
+
+#contenedorCoeficientesSeveridad .container_btn_control {
+  text-align: end;
+  margin-bottom: 8px;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+/**** Select ****/
+#contenedorCoeficientesSeveridad .container_Select,
+#contenedorCoeficientesSeveridad .divForm {
+  padding: 0;
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  white-space: nowrap;
+}
+
+#contenedorCoeficientesSeveridad .container_Select{
+  position: relative;
+}
+
+#contenedorCoeficientesSeveridad .container_Select .bootstrap-select {
+  width: 100%;
+}
+
+#contenedorCoeficientesSeveridad .container_Select > label {
+   color: #999;
+   position: absolute;
+   pointer-events: none;
+   text-overflow: ellipsis;
+   overflow: hidden;
+   max-width: calc(100% - 30px);
+   z-index: 1;
+   background-color: white;
+   padding: 0px 8px;
+   left: 14px;
+   top: -11px;
+   font-size: 13px;
+}
+
+#contenedorCoeficientesSeveridad .container_Select button.dropdown-toggle,
+#contenedorCoeficientesSeveridad .btn-light:active{
+   background: white !important;
+}
+
+#contenedorCoeficientesSeveridad .bootstrap-select .dropdown-toggle:focus {
+  outline: 0 !important;
+}
+
+#contenedorCoeficientesSeveridad #info_reg_ .bootstrap-select button.dropdown-toggle {
+  padding: .25rem .5rem;
+  font-size: .875rem;
+  line-height: 1.5;
+  border-radius: .2rem;
+}
+
+#contenedorCoeficientesSeveridad .bootstrap-select .dropdown-toggle:focus,
+#divForm .bootstrap-select .dropdown-toggle:focus {
+   outline: 0 !important;
+}
+
+@media only screen and (max-width: 670px) {
+  #contenedorCoeficientesSeveridad {
+    background-size: contain;
+  }
+}
+
+a {
+  outline: none!important;
+}

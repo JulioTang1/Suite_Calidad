@@ -1,0 +1,474 @@
+#contenedorPermisos_Recurso {
+  padding: 10px 8px !important;
+  -webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+@media only screen and (orientation: portrait){
+  #contenedorPermisos_Recurso{
+    padding: 10px 0 0 0 !important;
+  }
+}
+
+#contenedorPermisos_Recurso #ContenedorOpc{
+
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(150px, 200px);
+}
+
+@media only screen and (min-width: 480px){
+#contenedorPermisos_Recurso #ContenedorOpc{
+    grid-template-columns: repeat(2, 1fr);
+}
+}
+
+@media only screen and (min-width: 660px){
+#contenedorPermisos_Recurso #ContenedorOpc{
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+
+@media only screen and (min-width: 840px){
+#contenedorPermisos_Recurso #ContenedorOpc{
+    grid-template-columns: repeat(4, 1fr);
+}
+}
+
+@media only screen and (min-width: 1020px){
+#contenedorPermisos_Recurso #ContenedorOpc{
+    grid-template-columns: repeat(5, 1fr);
+}
+}
+
+@media only screen and (min-width: 1200px){
+#contenedorPermisos_Recurso #ContenedorOpc{
+    grid-template-columns: repeat(6, 1fr);
+}
+}
+
+@media only screen and (min-width: 1380px){
+#contenedorPermisos_Recurso #ContenedorOpc{
+    grid-template-columns: repeat(7, 1fr);
+}
+}
+
+@media only screen and (min-width: 1560px){
+#contenedorPermisos_Recurso #ContenedorOpc{
+    grid-template-columns: repeat(8, 1fr);
+}
+}
+
+#contenedorPermisos_Recurso .contenedor-Opc{
+
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 190px;
+  height: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #696565;
+  box-shadow: 3px 3px 3px 2px rgb(0 0 0 / 20%), 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 3px 0 rgb(0 0 0 / 20%);
+}
+  
+#contenedorPermisos_Recurso .contenedor-Opc:hover{
+  box-shadow: 0 0 5px 4px #8e8e8e;
+  cursor: pointer;
+}
+
+/* *********************************************************** */
+
+#contenedorPermisos_Recurso .contenedor-Opc:hover .Rol_img{	
+  font-size: 100px !important;
+}
+
+#contenedorPermisos_Recurso .contenedor-Opc#crearPerfil:hover .Rol_img{	
+  color:#28a745!important;
+  font-size: 100px !important;
+}
+
+#contenedorPermisos_Recurso .contenedor-Opc#visualizar:hover .Rol_img{	
+  color: #17a2b8!important;
+  font-size: 100px !important;
+}
+
+#contenedorPermisos_Recurso .contenedor-Opc#Ed_permisos:hover .Rol_img{	
+  color:#007bff!important;
+  font-size: 100px !important;
+}
+
+
+#contenedorPermisos_Recurso .name_table{
+  vertical-align: middle;
+  display: inherit;
+  font-size: x-large;
+  font-weight: bolder;
+  margin-left: 20px;
+  font-family: 'Muli', Heveltica, Arial, sans-serif;
+}
+
+/* *********************************************************** */
+
+#contenedorPermisos_Recurso .Rol_img{	
+  width: 100%;
+  height: calc(100% - 25px);
+  border-radius: 10px;
+  color: gray;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 90px;
+  transition: all 0.2s ease;
+}
+
+#contenedorPermisos_Recurso .Permisos_Recurso_img{
+  
+  height: calc(100% - 25px);
+  border-radius: 10px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+#contenedorPermisos_Recurso #ContenedorOpc .info{
+  display: grid;
+  height: 25px;
+  text-align: center;
+}
+
+#contenedorPermisos_Recurso #ContenedorOpc .texto{
+  height: fit-content;
+  background: #e8e8e8;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 2px;
+  border-radius: 3px;
+}
+
+/* ******************************************************************************** */
+
+/* En focus, no mostrar outline (borde azul) */
+#swal2-content input:focus{ 
+    border:2px solid #007bff;
+}
+
+.boton{
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  background-color: transparent;
+  border: 1px solid transparent;
+  letter-spacing: .5px;
+  padding: .375rem .75rem;
+  border-radius: .25rem;
+  transition: color .15s;
+  background-color: #007bff;
+  color:white!important;
+  cursor:pointer;
+}
+
+.boton-desabilitado{
+    background-color: #5aaaff!important;
+}
+
+.boton-popover-desabilitado{
+   color: #74c687!important;
+}
+
+.blue{
+    float: right;
+    background-color: #007bff; 
+    box-shadow: 1px 1px 7px 0px  #007bff;
+}
+
+.red{
+    float: right;
+    background-color: #dc3545;
+    box-shadow: 1px 1px 7px 0px  #dc3545; 
+}
+
+.selectpicker > div{
+  width: 100%;
+}
+
+.border-r-select {
+  border-radius: 5px;
+}
+
+#divForm .perfil_recurso{
+  overflow-y: auto;
+  height: 400px;
+}
+
+/* Estilos generales para las tarjetas de categorias */
+#divForm .perfil_recurso::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
+#divForm .perfil_recurso::-webkit-scrollbar{
+  height: 8px;
+  width: 8px;
+}
+
+#divForm .perfil_recurso::-webkit-scrollbar-thumb{
+  border-radius: 30px;
+  background-color: #999;
+}
+
+#divForm .container_InLa {
+   position: relative;
+   width: 100%;
+   padding-left: 5px;
+   padding-right: 5px;
+   white-space: nowrap;
+}
+
+#divForm .container_InLa input {
+   font-size: 16px;
+   height: 32px;
+   padding: 8px 0px 5px 12px;
+   border-radius: 4px;
+   display: block;
+   border: 1px solid #ccc;
+   width: 100%;
+   outline: 0;
+   transition: border-color 0.3s;
+}
+
+#divForm .container_InLa input:focus {
+   border: 2px solid #007bff;
+   outline: none;
+}
+
+#divForm .container_InLa input:disabled{
+   color: gray;
+   cursor: not-allowed;
+   background: #fafafa;
+}
+
+#divForm .container_InLa label{
+   color: #999;
+   font-size: 16px;
+   font-weight: normal;
+   position: absolute;
+   pointer-events: none;
+   left: 24px;
+   top: 6px;
+   transition: 0.2s ease all;
+   -moz-transition: 0.2s ease all;
+   -webkit-transition: 0.2s ease all;
+   text-overflow: ellipsis;
+   overflow: hidden;
+   max-width: calc(100% - 30px);
+}
+
+#divForm .container_InLa input:focus ~ label {
+   color: #007bff!important;
+}
+
+#divForm .container_InLa input:disabled:not(:placeholder-shown) ~ label,
+#divForm .container_InLa input:valid ~ label,
+#divForm .container_InLa input:focus ~ label,
+#divForm .container_InLa input.InputFecha ~ label {
+   background-color: white;
+   padding: 0px 8px;
+   left: 20px;
+   top: -12px;
+   font-size: 14px;
+}
+
+#divForm .container_InLa input.errorInput:focus ~ label{
+  color: red !important;
+}
+
+/************************************************************************************/
+
+/* estilos mensajes de error */
+.swal2-container #divForm .errorInput{
+  border: solid 2px red !important;
+}
+
+.swal2-container #divForm .errorInput:focus ~ label{
+  color: red !important;
+}
+
+.swal2-container #divForm .errorInput:valid ~ label{
+  color: red !important;
+}
+
+.swal2-container #valorForm .errorInput{
+  border: solid 2px red !important;
+}
+
+.swal2-container #valorForm .errorInput:focus ~ label{
+  color: red !important;
+}
+
+.swal2-container #valorForm .errorInput:valid ~ label{
+  color: red !important;
+}
+
+
+#contenedorM_crear_atributo .errorInput{
+  border: solid 2px red !important;
+}
+
+#contenedorM_crear_atributo .errorInput:focus ~ label{
+  color: red !important;
+}
+
+#contenedorM_crear_atributo .errorInput:valid ~ label{
+  color: red !important;
+}
+
+.msnError{
+  color: #d93025;
+  font-size: 12px;
+}
+
+.msnError span{
+  vertical-align: middle;
+}
+
+.msnError i{
+  vertical-align: middle;
+}
+
+/*****************************************************************************************/
+
+#divForm .Cat_app{
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: start;
+  border-top: #ccc 1px solid;
+  padding-top: 5px;
+}
+
+#divForm .container_Select{
+  padding: 0;
+  position: relative;
+}
+
+#divForm .container_Select > label {
+  color: #999;
+  position: absolute;
+  pointer-events: none;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: calc(100% - 30px);
+  z-index: 1;
+  background-color: white;
+  padding: 0px 8px;
+  left: 14px;
+  top: -11px;
+  font-size: 13px;
+}
+
+#divForm .container_Select button.dropdown-toggle{
+  background: white !important;
+  height: 32px !important;
+  font-size: 16px !important;
+  border: 1px solid #ccc;
+}
+
+#divForm .container_Select button.dropdown-toggle:focus {
+  outline: none !important
+}
+
+#divForm .container_InLa.C_perfil{
+  padding-bottom: 15px;
+}
+
+#divForm .custom-switch{
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#divForm .custom-control-input:focus ~ .custom-control-label::before {
+  box-shadow: none;
+}
+
+#divForm .perfil_recurso .container_InLa input{
+  pointer-events: none;
+}
+
+/* ************************************************************************************************* */
+
+#contenedorPermisos_Recurso .container_DataTable {
+  height: calc(100vh - 52px);
+}
+
+#contenedorPermisos_Recurso .container_DataTable .bootstrap-select{
+  width: 50px !important;
+  padding: 0 !important;
+}
+
+.popover #edit{
+  color: #28a745;
+}
+
+#contenedorPermisos_Recurso tbody{
+  cursor:pointer;
+ }
+ 
+#contenedorPermisos_Recurso .boton-desabilitado{
+  opacity: .65;
+  cursor: default !important;
+}
+
+/* ***************************************************************************************************** */
+
+#selectorP > div{
+  width: 100%;
+}
+
+.swal2-popup {
+  overflow-x: visible!important;
+  overflow-y: visible!important;
+}
+
+/**********************************************************/
+
+#contenedorPermisos_Recurso #Titulo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 18px;
+}
+
+#contenedorPermisos_Recurso #Titulo a:first-child{
+  height: 100%;
+  background: #017350;
+  margin-right: 6px;
+  padding: 0px 6px;
+  border-radius: 12px 4px 12px 4px;
+  color: #fff;    
+}
+
+#contenedorPermisos_Recurso #Titulo a:last-child{
+  height: 100%;
+  font-weight: 500;
+}
+
+/*********************************************************************/

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/amarillo"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+    
+        <ImageView
+            android:id="@+id/volverLecturas"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/leftarrow"/>
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="220dp"
+            android:layout_height="2000dp"
+            android:src="@drawable/banasanTituloSinFondo"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundededges"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="310dp"
+        android:layout_height="230dp">
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/visita"
+            android:text="Visita x"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/finca"
+            android:layout_below="@+id/visita"
+            android:text="Finca x, Sector x Sector x Sector x"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/fecha"
+            android:layout_alignParentRight="true"
+            android:text="28/12/2020"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/precipitacion"
+            android:layout_above="@+id/temperaturaMinima"
+            android:text="Precipitación: 100.00mm/h"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/temperaturaMinima"
+            android:layout_above="@+id/temperatura"
+            android:text="Temperatura Mínima: 100.00°C"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/temperatura"
+            android:layout_above="@+id/temperaturaMaxima"
+            android:text="Temperatura Actual: 222.22°C"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/temperaturaMaxima"
+            android:layout_above="@+id/humedad"
+            android:text="Temperatura Máxima: 363.3°C"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/humedad"
+            android:layout_alignParentBottom="true"
+            android:text="Humedad Relativa: 332.33 %"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_marginTop="20dp"
+        android:listSelector="@android:color/transparent"
+        android:divider = "@color/amarillo"
+        android:padding="10dp"
+        android:layout_width="330dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/listLecturas" />
+
+</LinearLayout>
